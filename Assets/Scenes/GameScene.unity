@@ -660,7 +660,6 @@ GameObject:
   - component: {fileID: 538251644}
   - component: {fileID: 538251643}
   - component: {fileID: 538251642}
-  - component: {fileID: 538251645}
   - component: {fileID: 538251646}
   m_Layer: 0
   m_Name: CamPos1(TopLeft)
@@ -763,22 +762,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538251640}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &538251645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538251640}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7536a9eedfdb3e6428f49b517f56f161, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NeocortexCamPosObject
-  Name: Camera Location
-  properties:
-  - name: Location
-    value: TopLeft
 --- !u!114 &538251646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -976,7 +959,6 @@ GameObject:
   - component: {fileID: 1000635330}
   - component: {fileID: 1000635329}
   - component: {fileID: 1000635328}
-  - component: {fileID: 1000635331}
   - component: {fileID: 1000635332}
   m_Layer: 0
   m_Name: CamPos3(TopRight)
@@ -1079,22 +1061,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000635326}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1000635331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000635326}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7536a9eedfdb3e6428f49b517f56f161, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NeocortexCamPosObject
-  Name: Camera Location
-  properties:
-  - name: Location
-    value: TopRight
 --- !u!114 &1000635332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1422,7 +1388,6 @@ GameObject:
   - component: {fileID: 1871337593}
   - component: {fileID: 1871337592}
   - component: {fileID: 1871337591}
-  - component: {fileID: 1871337594}
   - component: {fileID: 1871337595}
   m_Layer: 0
   m_Name: CamPos2(BottomLeft)
@@ -1525,22 +1490,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871337589}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1871337594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871337589}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7536a9eedfdb3e6428f49b517f56f161, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NeocortexCamPosObject
-  Name: Camera Location
-  properties:
-  - name: Location
-    value: BottomLeft
 --- !u!114 &1871337595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1658,7 +1607,6 @@ GameObject:
   - component: {fileID: 2111094685}
   - component: {fileID: 2111094684}
   - component: {fileID: 2111094683}
-  - component: {fileID: 2111094686}
   - component: {fileID: 2111094687}
   m_Layer: 0
   m_Name: CamPos4(BottomRight)
@@ -1761,22 +1709,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111094681}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2111094686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2111094681}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7536a9eedfdb3e6428f49b517f56f161, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NeocortexCamPosObject
-  Name: Camera Location
-  properties:
-  - name: Location
-    value: BottomRight
 --- !u!114 &2111094687
 MonoBehaviour:
   m_ObjectHideFlags: 0
