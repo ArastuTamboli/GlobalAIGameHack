@@ -6,43 +6,58 @@ public class TowerInfoUI : MonoBehaviour
 {
     [Header("UI Elements")]
     public TextMeshProUGUI towerNameText;
-    public Image towerImage;
     public TextMeshProUGUI levelText;
     public TextMeshProUGUI damageText;
     public TextMeshProUGUI rangeText;
     public TextMeshProUGUI rateOfFireText;
 
-    [Header("Upgrade Info")]
-    public GameObject upgradePanel;
-    public TextMeshProUGUI nextDamageText;
-    public TextMeshProUGUI nextRangeText;
-    public TextMeshProUGUI nextRateOfFireText;
+    [Header("Buttons")]
+    public GameObject upgradeButton;
     public TextMeshProUGUI upgradeCostText;
-    public Button upgradeButton;
-
-    [Header("Sell Info")]
-    public TextMeshProUGUI sellValueText;
+    public Button upgradeButtonComponent;
     public Button sellButton;
+    public Button closeButton;
+    public TextMeshProUGUI sellValueText;
 
+    [Header("Settings")]
+    public Vector3 offset = new Vector3(0, 3f, 0);
+    //public bool billboardToCamera = true;
 
+    //private Camera mainCamera;
     private TowerBehavior currentTower;
-
+    [SerializeField]TowerSelectionManager towerSelectionManager;
     void Start()
     {
-        
-
-        if (upgradeButton != null)
+        // mainCamera = Camera.main;
+     
+        if (upgradeButtonComponent != null)
         {
-            upgradeButton.onClick.AddListener(OnUpgradeClicked);
+            upgradeButtonComponent.onClick.AddListener(OnUpgradeClicked);
         }
 
         if (sellButton != null)
         {
             sellButton.onClick.AddListener(OnSellClicked);
         }
-
+        if (closeButton != null)
+        {
+            closeButton.onClick.AddListener(()=> towerSelectionManager.DeselectTower());
+        }
         Hide();
     }
+
+    //void LateUpdate()
+    //{
+    //    if (billboardToCamera && mainCamera != null && gameObject.activeSelf)
+    //    {
+    //        transform.rotation = Quaternion.LookRotation(transform.position - mainCamera.transform.position);
+    //    }
+
+    //    if (currentTower != null)
+    //    {
+    //        transform.position = currentTower.transform.position + offset;
+    //    }
+    //}
 
     public void ShowForTower(TowerBehavior tower)
     {
@@ -68,58 +83,76 @@ public class TowerInfoUI : MonoBehaviour
         if (levelText != null)
             levelText.text = $"Level {currentTower.upgradeLevel + 1}";
 
-        if (damageText != null)
-            damageText.text = $"Damage: {currentTower.damage:F1}";
-
-        if (rangeText != null)
-            rangeText.text = $"Range: {currentTower.range:F1}";
-
-        if (rateOfFireText != null)
-            rateOfFireText.text = $"Rate: {(1f / currentTower.rateOfFire):F2}/s";
-
-        UpdateUpgradeUI();
-        UpdateSellUI();
+        UpdateStatsDisplay();
+        UpdateUpgradeButton();
+        UpdateSellButton();
     }
 
-    void UpdateUpgradeUI()
+    void UpdateStatsDisplay()
     {
         bool canUpgrade = currentTower.CanUpgrade();
 
-        if (upgradePanel != null)
-            upgradePanel.SetActive(canUpgrade);
+        if (canUpgrade)
+        {
+            float nextDamage = currentTower.towerData.baseDamage * Mathf.Pow(currentTower.towerData.damagePerLevel, currentTower.upgradeLevel + 1);
+            float nextRange = currentTower.towerData.baseRange * Mathf.Pow(currentTower.towerData.rangePerLevel, currentTower.upgradeLevel + 1);
+            float nextRateOfFire = currentTower.towerData.baseRateOfFire / Mathf.Pow(currentTower.towerData.rateOfFirePerLevel, currentTower.upgradeLevel + 1);
+
+            if (damageText != null)
+                damageText.text = $"Damage: {currentTower.damage:F1} -> <color=green>{nextDamage:F1}</color>";
+
+            if (rangeText != null)
+                rangeText.text = $"Range: {currentTower.range:F1} -> <color=green>{nextRange:F1}</color>";
+
+            if (rateOfFireText != null)
+                rateOfFireText.text = $"Rate: {(1f / currentTower.rateOfFire):F2}/s -> <color=green>{(1f / nextRateOfFire):F2}/s</color>";
+        }
+        else
+        {
+            if (damageText != null)
+                damageText.text = $"Damage: {currentTower.damage:F1} <color=yellow>(MAX)</color>";
+
+            if (rangeText != null)
+                rangeText.text = $"Range: {currentTower.range:F1} <color=yellow>(MAX)</color>";
+
+            if (rateOfFireText != null)
+                rateOfFireText.text = $"Rate: {(1f / currentTower.rateOfFire):F2}/s <color=yellow>(MAX)</color>";
+        }
+    }
+
+    void UpdateUpgradeButton()
+    {
+        bool canUpgrade = currentTower.CanUpgrade();
+
+        if (upgradeButton != null)
+        {
+            upgradeButton.SetActive(canUpgrade);
+        }
 
         if (!canUpgrade) return;
 
         int upgradeCost = currentTower.GetUpgradeCost();
-        float nextDamage = currentTower.towerData.baseDamage * Mathf.Pow(currentTower.towerData.damagePerLevel, currentTower.upgradeLevel + 1);
-        float nextRange = currentTower.towerData.baseRange * Mathf.Pow(currentTower.towerData.rangePerLevel, currentTower.upgradeLevel + 1);
-        float nextRateOfFire = currentTower.towerData.baseRateOfFire / Mathf.Pow(currentTower.towerData.rateOfFirePerLevel, currentTower.upgradeLevel + 1);
-
-        if (nextDamageText != null)
-            nextDamageText.text = $"-> {nextDamage:F1}";
-
-        if (nextRangeText != null)
-            nextRangeText.text = $"-> {nextRange:F1}";
-
-        if (nextRateOfFireText != null)
-            nextRateOfFireText.text = $"-> {(1f / nextRateOfFire):F2}/s";
 
         if (upgradeCostText != null)
-            upgradeCostText.text = $"${upgradeCost}";
+        {
+            upgradeCostText.text = $"Upgrade (${upgradeCost})";
+        }
 
-        if (upgradeButton != null)
+        if (upgradeButtonComponent != null)
         {
             bool canAfford = GameManager.instance != null && GameManager.instance.money >= upgradeCost;
-            upgradeButton.interactable = canAfford;
+            upgradeButtonComponent.interactable = canAfford;
         }
     }
 
-    void UpdateSellUI()
+    void UpdateSellButton()
     {
         int sellValue = currentTower.GetSellValue();
 
         if (sellValueText != null)
-            sellValueText.text = $"Sell: ${sellValue}";
+        {
+            sellValueText.text = $"Sell (${sellValue})";
+        }
     }
 
     void OnUpgradeClicked()
