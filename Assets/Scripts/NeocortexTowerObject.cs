@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NeocortexTowerObject : MonoBehaviour
 {
-    public Interactables Type=>Interactables.TOWER;
+    public InteractableType Type => InteractableType.OBJECT;
     [HideInInspector]public string Name;
     [HideInInspector]public string towerType;
     public bool IsSubject { get; private set; }

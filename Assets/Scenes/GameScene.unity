@@ -660,8 +660,10 @@ GameObject:
   - component: {fileID: 538251644}
   - component: {fileID: 538251643}
   - component: {fileID: 538251642}
+  - component: {fileID: 538251645}
+  - component: {fileID: 538251646}
   m_Layer: 0
-  m_Name: CamPos1
+  m_Name: CamPos1(TopLeft)
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -761,6 +763,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538251640}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &538251645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538251640}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7536a9eedfdb3e6428f49b517f56f161, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NeocortexCamPosObject
+  Name: Camera Location
+  properties:
+  - name: Location
+    value: TopLeft
+--- !u!114 &538251646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538251640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd1860a9c9012c64d84c736520afff4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Neocortex.Runtime::Neocortex.NeocortexInteractable
+  Type: 1
+  Name: Camera
+  Properties:
+  - name: Location
+    value: Top Left
 --- !u!1 &745065301
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,9 +913,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VoiceCommandController
   smartAgent: {fileID: 1212798810}
   audioReceiver: {fileID: 1212798809}
-  cameraController: {fileID: 0}
+  cameraController: {fileID: 1271552606}
   towerManager: {fileID: 1554312451}
-  gridSystem: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,8 +976,10 @@ GameObject:
   - component: {fileID: 1000635330}
   - component: {fileID: 1000635329}
   - component: {fileID: 1000635328}
+  - component: {fileID: 1000635331}
+  - component: {fileID: 1000635332}
   m_Layer: 0
-  m_Name: CamPos3
+  m_Name: CamPos3(TopRight)
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1043,6 +1079,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000635326}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1000635331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000635326}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7536a9eedfdb3e6428f49b517f56f161, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NeocortexCamPosObject
+  Name: Camera Location
+  properties:
+  - name: Location
+    value: TopRight
+--- !u!114 &1000635332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000635326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd1860a9c9012c64d84c736520afff4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Neocortex.Runtime::Neocortex.NeocortexInteractable
+  Type: 1
+  Name: Camera
+  Properties:
+  - name: Location
+    value: Top Right
 --- !u!1 &1212798805
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,7 +1220,7 @@ Transform:
   m_GameObject: {fileID: 1271552604}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -3.9, y: 0, z: -5.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1173,12 +1242,12 @@ MonoBehaviour:
   cameraTransform: {fileID: 330585546}
   moveSpeed: 0.2
   moveTime: 5
-  rotationAmount: 1
+  rotationAmount: 0.5
   zoomAmount: {x: 0, y: -2, z: 2}
-  dragStartPos: {x: 0, y: 0, z: 0}
-  dragCurrentPos: {x: 0, y: 0, z: 0}
-  rotateStartPos: {x: 0, y: 0, z: 0}
-  rotateCurrentPos: {x: 0, y: 0, z: 0}
+  minBounds: {x: -50, y: -50}
+  maxBounds: {x: 50, y: 50}
+  minZoom: {x: 0, y: 5, z: -5}
+  maxZoom: {x: 0, y: 30, z: -30}
 --- !u!1 &1437873943
 GameObject:
   m_ObjectHideFlags: 0
@@ -1353,8 +1422,10 @@ GameObject:
   - component: {fileID: 1871337593}
   - component: {fileID: 1871337592}
   - component: {fileID: 1871337591}
+  - component: {fileID: 1871337594}
+  - component: {fileID: 1871337595}
   m_Layer: 0
-  m_Name: CamPos2
+  m_Name: CamPos2(BottomLeft)
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1454,6 +1525,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871337589}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1871337594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871337589}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7536a9eedfdb3e6428f49b517f56f161, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NeocortexCamPosObject
+  Name: Camera Location
+  properties:
+  - name: Location
+    value: BottomLeft
+--- !u!114 &1871337595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871337589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd1860a9c9012c64d84c736520afff4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Neocortex.Runtime::Neocortex.NeocortexInteractable
+  Type: 1
+  Name: Camera
+  Properties:
+  - name: Location
+    value: Bottom left
 --- !u!1 &1892814640
 GameObject:
   m_ObjectHideFlags: 0
@@ -1554,8 +1658,10 @@ GameObject:
   - component: {fileID: 2111094685}
   - component: {fileID: 2111094684}
   - component: {fileID: 2111094683}
+  - component: {fileID: 2111094686}
+  - component: {fileID: 2111094687}
   m_Layer: 0
-  m_Name: CamPos4
+  m_Name: CamPos4(BottomRight)
   m_TagString: Untagged
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1655,6 +1761,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111094681}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2111094686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111094681}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7536a9eedfdb3e6428f49b517f56f161, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NeocortexCamPosObject
+  Name: Camera Location
+  properties:
+  - name: Location
+    value: BottomRight
+--- !u!114 &2111094687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111094681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd1860a9c9012c64d84c736520afff4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Neocortex.Runtime::Neocortex.NeocortexInteractable
+  Type: 1
+  Name: Camera
+  Properties:
+  - name: Location
+    value: Bottom Right
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

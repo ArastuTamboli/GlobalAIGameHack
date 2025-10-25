@@ -2,15 +2,11 @@ using Neocortex;
 using Neocortex.Data;
 using UnityEditor.Rendering;
 using UnityEngine;
-public enum Interactables
-{
-    TOWER,
-    CAMPOS,
-}
+
 
 public class NeocortexCamPosObject : MonoBehaviour
 {
-    public Interactables Type => Interactables.CAMPOS;
+    public InteractableType Type => InteractableType.OBJECT;
     public string Name;
 
     public bool IsSubject { get; private set; }

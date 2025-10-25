@@ -11,7 +11,7 @@ public class VoiceCommandController : MonoBehaviour
     public NeocortexAudioReceiver audioReceiver;
     public CameraController cameraController;
     public TowerManager towerManager;
-    public CameraSystem gridSystem;
+
 
     //[Header("Settings")]
     //public bool autoStartRecording = false;
@@ -63,51 +63,63 @@ public class VoiceCommandController : MonoBehaviour
         Debug.Log($"AI Response: {response.message}");
         Debug.Log($"Action: {response.action}");
         Debug.Log($"Meta: {response.metadata.Length}");
-        foreach (var item in response.metadata)
-        {
-            Debug.Log($"Meta: {item.name}");
-        }
+        //foreach (var item in response.metadata)
+        //{
+        //    Debug.Log($"Meta: {item.name}");
+        //    Debug.Log($"Meta: {item.type}");
+        //    Debug.Log($"Meta: {item.isSubject}");
+        //    Debug.Log($"Meta: {item.position}");
+        //}
         // isProcessing = false;
 
-        Interactable tower = null;
-        Interactable cameraPos = null;
-        Interactable[] interactables = response.metadata.Where(i => i.isSubject).ToArray();
-        foreach (var i in interactables)
-        {
-            Debug.Log($"Interactable: type={i.type}, name={i.name}");
+        //Interactable tower = null;
+        //Interactable cameraPos = null;
+        //Interactable[] interactables = response.metadata.Where(i => i.isSubject).ToArray();
 
-            if (i.type == Interactables.TOWER.ToString())
-            {
-                tower = i;
-                Debug.Log($"tower: {i.name}");
-            }
-            else if(i.type == Interactables.CAMPOS.ToString())
-            {
-                Debug.Log($"camera pos: {i.name}");
-                cameraPos = i; 
-            }
-        }
+        //foreach (var i in interactables)
+        //{
+        //    Debug.Log($"Interactable: type={i.type}, name={i.name}");
+
+        //    if (i.type == InteractableType.OBJECT.ToString())
+        //    {
+        //        if (i.name.Contains("Tower"))
+        //        {
+        //            tower = i;
+        //            Debug.Log($"tower: {i.name}");
+        //        }
+        //        if (i.name == "Movement Cam")
+        //        {
+        //            cameraPos = i;
+        //            Debug.Log($"CameraPos: {i.name}");
+        //        }
+        //    }
+        //    else if(i.type == InteractableType.CHARACTER.ToString())
+        //    {
+        //        Debug.Log($"TYPE CAHRACTER");
+
+        //    }
+        //}
+        Interactable interactable = response.metadata.FirstOrDefault(i => i.isSubject);
 
         string action = response.action;
+
         if (!string.IsNullOrEmpty(action))
         {
             
-                if (action == "GO_TO_GRID" && cameraPos != null)
+                if (action == "GO_TO_POINT")
                 {
-                    Debug.Log($"{action} {cameraPos.name}");
-
-                    MoveCamera(cameraPos.position);
+                    MoveCamera(interactable.position);
 
                 }
-                else if (action == "UPGRADE_TOWER" && tower !=null)
-                {
-                    Debug.Log($"{action} {tower.name}");
+                //else if (action == "UPGRADE_TOWER" && tower !=null)
+                //{
+                //    Debug.Log($"{action} {tower.name}");
 
                     
-                }
+                //}
                 else
                 {
-                    Debug.Log($"{action} action not defined in project");
+                    Debug.Log($"{action} action error");
                 }
             
         }
