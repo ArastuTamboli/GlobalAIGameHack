@@ -1,0 +1,1530 @@
+-------------------
+Folder Name: Prefabs
+-------------------
+Prefab Name: FX_ArtilleryShell_01
+    Mesh Name: FX_ArtilleryShell_01
+        Slot: PolygonParticleFX_Shell (Uses custom shader)
+        Slot: PolygonParticleFX_Wind (Uses custom shader)
+    Mesh Name: FX_ArtilleryStrike_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_ArtilleryStrike_Flash_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_ArtilleryStrike_Blast_01
+        Slot: PolygonParticleFX_Material (Uses custom shader)
+    Mesh Name: FX_ArtilleryStrike_Smoke_01
+        Slot: PolygonParticleFX_Material (Uses custom shader)
+    Mesh Name: FX_ArtilleryStrike_Debris_01
+        Slot: PolygonParticleFX_Rock_01 (No Albedo Texture)
+
+Prefab Name: FX_ArtilleryStrike_01
+    Mesh Name: FX_ArtilleryStrike_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_ArtilleryStrike_Flash_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_ArtilleryStrike_Flash_02
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_ArtilleryStrike_Blast_01
+        Slot: PolygonParticleFX_Material (Uses custom shader)
+    Mesh Name: FX_ArtilleryStrike_Smoke_01
+        Slot: PolygonParticleFX_Material (Uses custom shader)
+    Mesh Name: FX_ArtilleryStrike_Smoke_02
+        Slot: PolygonParticleFX_Material (Uses custom shader)
+    Mesh Name: FX_ArtilleryStrike_Debris_01
+        Slot: PolygonParticleFX_Rock_01 (No Albedo Texture)
+
+Prefab Name: FX_Blizzard_Snow_01
+    Mesh Name: FX_Blizzard_Snow_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+    Mesh Name: FX_Blizzard_Cloud_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_BloodSplat_01
+    Mesh Name: FX_BloodSplat_01
+        Slot: Sprites-Default (Uses custom shader)
+
+Prefab Name: FX_BloodSplat_Small_01
+    Mesh Name: FX_BloodSplat_Small_01
+        Slot: Sprites-Default (Uses custom shader)
+
+Prefab Name: FX_Bubbles_Float_01
+    Mesh Name: FX_Bubbles_Float_01
+        Slot: PolygonParticleFX_Bubble (Uses custom shader)
+
+Prefab Name: FX_Bubble_01
+    Mesh Name: FX_Bubble_01
+        Slot: PolygonParticleFX_Bubble_01 (Uses custom shader)
+
+Prefab Name: FX_CannonShot_01
+    Mesh Name: FX_CannonShot_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_CannonShot_Flash_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_CannonShot_Blast_01
+        Slot: PolygonParticleFX_Material (Uses custom shader)
+    Mesh Name: FX_CannonShot_Smoke_01
+        Slot: PolygonParticleFX_Material (Uses custom shader)
+
+Prefab Name: FX_Cartoony_Footstep_01
+    Mesh Name: FX_Cartoony_Footstep_01
+        Slot: Default-Particle (Uses custom shader)
+
+Prefab Name: FX_Cartoony_Jump_01
+    Mesh Name: FX_Cartoony_Jump_01
+        Slot: Default-Particle (Uses custom shader)
+
+Prefab Name: FX_Cartoony_Jump_Up_01
+    Mesh Name: FX_Cartoony_Jump_Up_01
+        Slot: Default-Particle (Uses custom shader)
+    Mesh Name: FX_Cartoony_Jump_Dust_Up_01
+        Slot: Default-Particle (Uses custom shader)
+    Mesh Name: FX_Cartoony_Jump_Spike_01
+        Slot: Default-Particle (Uses custom shader)
+
+Prefab Name: FX_Cartoony_Rings_01
+    Mesh Name: FX_Cartoony_Rings_01
+        Slot: PolygonParticleFX_Ring_01 (Uses custom shader)
+    Mesh Name: FX_Cartoony_Ring_Lines_01
+        Slot: PolygonParticleFX_Cutout_Round_VertexLit (Uses custom shader)
+
+Prefab Name: FX_Cartoony_Sprint_01
+    Mesh Name: FX_Cartoony_Sprint_01
+        Slot: Default-Particle (Uses custom shader)
+
+Prefab Name: FX_Confetti_01
+    Mesh Name: FX_Confetti_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Confetti_Smoke_01
+        Slot: Sprites-Default (Uses custom shader)
+    Mesh Name: FX_Confetti_Flash_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_Confetti_Falling_01
+    Mesh Name: FX_Confetti_Falling_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Direction_Arrows_01
+    Mesh Name: FX_Direction_Arrows_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Direction_Arrows_02
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Direction_Arrows_03
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Direction_Arrows_02
+    Mesh Name: FX_Direction_Arrows_02
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Direction_Arrows_03
+    Mesh Name: FX_Direction_Arrows_03
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Dust_Big_01
+    Mesh Name: FX_Dust_Big_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Dust_Blowing_Soft_01
+    Mesh Name: FX_Dust_Blowing_Soft_01
+        Slot: PolygonParticleFX_Dust (Uses custom shader)
+
+Prefab Name: FX_Dust_Small_01
+    Mesh Name: FX_Dust_Small_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Electricity_01
+    Mesh Name: FX_Electricity_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Electricity_02
+    Mesh Name: FX_Electricity_02
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Embers_01
+    Mesh Name: FX_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_ExperienceGain_01
+    Mesh Name: FX_ExperienceGain_01
+        Slot: PolygonParticleFX_Sparkle 1 (Uses custom shader)
+
+Prefab Name: FX_Explosion_01
+    Mesh Name: FX_Explosion_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+    Mesh Name: FX_Explosion_Sparks_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+    Mesh Name: FX_Explosion_Fire_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Explosion_Body_01
+    Mesh Name: FX_Explosion_Body_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+    Mesh Name: FX_Explosion_Body_Fire_01
+        Slot: PolygonParticleFX_Cutout_Round_Multiply (Uses custom shader)
+    Mesh Name: FX_Explosion_Body_Fire_Core_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_Explosion_Body_Blood_01
+        Slot: PolygonParticleFX_Cutout_Round_Multiply (Uses custom shader)
+    Mesh Name: FX_Explosion_Body_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Explosion_Body_Body_Fire_01
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_Explosion_Body_Chunk_01
+        Slot: PolygonParticleFX_Blood (No Albedo Texture)
+
+Prefab Name: FX_Explosion_Body_Bloody_01
+    Mesh Name: FX_Explosion_Body_Bloody_01
+        Slot: PolygonParticleFX_Cutout_Round_Multiply (Uses custom shader)
+    Mesh Name: FX_Explosion_Body_Blood_01
+        Slot: PolygonParticleFX_Cutout_Round_Multiply (Uses custom shader)
+    Mesh Name: FX_Explosion_Body_Body_Fire_01
+        Slot: PolygonParticleFX_Cutout_Round_Multiply (Uses custom shader)
+    Mesh Name: FX_Explosion_Body_Chunk_01
+        Slot: PolygonParticleFX_Blood (No Albedo Texture)
+
+Prefab Name: FX_Explosion_Large_Dark_01
+    Mesh Name: FX_Explosion_Large_Dark_01
+        Slot: PolygonParticleFX_Smoke_Mat_05 (Uses custom shader)
+    Mesh Name: Explosion_Large_Dark_Debris_01
+        Slot: PolygonParticleFX_Smoke_Mat_05 (Uses custom shader)
+    Mesh Name: Explosion_Large_Dark_Debris_02
+        Slot: PolygonParticleFX_Smoke_Mat_05 (Uses custom shader)
+    Mesh Name: Explosion_Large_Dark_Embers_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Fairy_01
+    Mesh Name: FX_Fairy_01
+        Slot: PolygonParticleFX_Wings_Grid (Uses custom shader)
+
+Prefab Name: FX_Fireball_01
+    Mesh Name: FX_Fireball_01
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_Fireball_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireball_Trail_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Fireball_Embers_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_Fireball_Shooting_01
+    Mesh Name: FX_Fireball_Shooting_01
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_Fireball_Shooting_Explosion_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_Fireball_Shooting_Explosion_Core_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Fireball_Shooting_Explosion_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireball_Shooting_Trail_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Fireball_Embers_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_Fireball_Shooting_Straight_01
+    Mesh Name: FX_Fireball_Shooting_Straight_01
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_Fireball_Shooting_Straight_Explosion_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_Fireball_Shooting_Straight_Explosion_Core_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Fireball_Shooting_Straight_Explosion_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireball_Shooting_Straight_Trail_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Fireball_Shooting_Straight_Embers_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_Fireflies_01
+    Mesh Name: FX_Fireflies_01
+        Slot: PolygonParticleFX_Dust (Uses custom shader)
+
+Prefab Name: FX_Fireworks_01
+    Mesh Name: FX_Fireworks_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Smoke_01
+        Slot: Sprites-Default (Uses custom shader)
+
+Prefab Name: FX_Fireworks_Group_01
+    Mesh Name: FX_Fireworks_Group_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Large_Red_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Explode_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Spark_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Smoke_01
+        Slot: Sprites-Default (Uses custom shader)
+    Mesh Name: FX_Fireworks_Medium_Blue_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Explode_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Spark_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Smoke_01
+        Slot: Sprites-Default (Uses custom shader)
+    Mesh Name: FX_Fireworks_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Explode_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Spark_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Smoke_01
+        Slot: Sprites-Default (Uses custom shader)
+
+Prefab Name: FX_Fireworks_Large_Red_01
+    Mesh Name: FX_Fireworks_Large_Red_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Explode_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Spark_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Smoke_01
+        Slot: Sprites-Default (Uses custom shader)
+
+Prefab Name: FX_Fireworks_Medium_Blue_01
+    Mesh Name: FX_Fireworks_Medium_Blue_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Explode_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Spark_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Smoke_01
+        Slot: Sprites-Default (Uses custom shader)
+
+Prefab Name: FX_Fireworks_Small_Orange_01
+    Mesh Name: FX_Fireworks_Small_Orange_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Explode_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Spark_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Fireworks_Smoke_01
+        Slot: Sprites-Default (Uses custom shader)
+
+Prefab Name: FX_Fire_01
+    Mesh Name: FX_Fire_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_Fire_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_Fire_Big_01
+    Mesh Name: FX_Fire_Big_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_Fire_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_Fire_Big_02
+    Mesh Name: FX_Fire_Big_02
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_Fire_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_Fire_Big_03
+    Mesh Name: FX_Fire_Big_03
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_Fire_Big_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_Fire_Explosion_01
+    Mesh Name: FX_Fire_Explosion_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_Fire_Explosion_Core_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_Fire_Explosion_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_Fire_Huge_01
+    Mesh Name: FX_Fire_Huge_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_Fire_Huge_Smoke_01
+        Slot: PolygonParticleFX_VertexLitBlended_Dark (Uses custom shader)
+
+Prefab Name: FX_Fire_Small_01
+    Mesh Name: FX_Fire_Small_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_Fire_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_Fire_Small_02
+    Mesh Name: FX_Fire_Small_02
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+
+Prefab Name: FX_Fire_Small_03
+    Mesh Name: FX_Fire_Small_03
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+
+Prefab Name: FX_FlameThrower_01
+    Mesh Name: FX_FlameThrower_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_FlameThrower_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_FlameThrower_02
+    Mesh Name: FX_FlameThrower_02
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_FlameThrower_Embers_02
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_Flame_Booster_01
+    Mesh Name: FX_Flame_Booster_01
+        Slot: PolygonParticleFX_Dust (Uses custom shader)
+    Mesh Name: FX_Flame_Booster_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_Flies_01
+    Mesh Name: FX_Flies_01
+        Slot: PolygonParticleFX_Flies (No Albedo Texture)
+
+Prefab Name: FX_Fog_Big_01
+    Mesh Name: FX_Fog_Big_01
+        Slot: Sprites-Default (Uses custom shader)
+
+Prefab Name: FX_Fog_Small_01
+    Mesh Name: FX_Fog_Small_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_GlowSpot_01
+    Mesh Name: FX_GlowSpot_01
+        Slot: PolygonParticleFX_Sparkle 1 (Uses custom shader)
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+
+Prefab Name: FX_GlowSpot_02
+    Mesh Name: FX_GlowSpot_02
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+
+Prefab Name: FX_GlowSpot_03
+    Mesh Name: FX_GlowSpot_03
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+
+Prefab Name: FX_Grenade_Explosive_01
+    Mesh Name: FX_Grenade_Explosive_01
+        Slot: PolygonParticleFX_VertexLitBlended_Light (Uses custom shader)
+    Mesh Name: FX_Grenade_Explosive_Fire_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+    Mesh Name: FX_Grenade_Explosive_Debris_01
+        Slot: PolygonParticleFX_Rock_01 (No Albedo Texture)
+    Mesh Name: FX_Grenade_Explosive_Ember_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Grenade_Explosive_Smoke_01
+        Slot: PolygonParticleFX_VertexLitBlended_Light (Uses custom shader)
+
+Prefab Name: FX_Grenade_Explosive_Toss_01
+    Mesh Name: FX_Grenade_Explosive_Toss_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+    Mesh Name: FX_Grenade_Explosive_01
+        Slot: PolygonParticleFX_VertexLitBlended_Light (Uses custom shader)
+    Mesh Name: FX_Grenade_Explosive_Fire_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+    Mesh Name: FX_Grenade_Explosive_Debris_01
+        Slot: PolygonParticleFX_Rock_01 (No Albedo Texture)
+    Mesh Name: FX_Grenade_Explosive_Ember_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Grenade_Explosive_Smoke_01
+        Slot: PolygonParticleFX_VertexLitBlended_Light (Uses custom shader)
+
+Prefab Name: FX_Grenade_Flash_01
+    Mesh Name: FX_Grenade_Flash_01
+        Slot: PolygonParticleFX_VertexLitBlended_Light (Uses custom shader)
+    Mesh Name: FX_Grenade_Flash_Ember_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Grenade_Flash_Smoke_01
+        Slot: PolygonParticleFX_VertexLitBlended_Light (Uses custom shader)
+
+Prefab Name: FX_Grenade_Flash_Toss_01
+    Mesh Name: FX_Grenade_Flash_Toss_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+    Mesh Name: FX_Grenade_Flash_01
+        Slot: PolygonParticleFX_VertexLitBlended_Light (Uses custom shader)
+    Mesh Name: FX_Grenade_Flash_Spark_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+    Mesh Name: FX_Grenade_Flash_Ember_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Grenade_Flash_Smoke_01
+        Slot: PolygonParticleFX_VertexLitBlended_Light (Uses custom shader)
+
+Prefab Name: FX_Grenade_Smoke_01
+    Mesh Name: FX_Grenade_Smoke_01
+        Slot: PolygonParticleFX_VertexLitBlended_Light (Uses custom shader)
+
+Prefab Name: FX_Grenade_Smoke_Toss_01
+    Mesh Name: FX_Grenade_Smoke_Toss_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+    Mesh Name: FX_Grenade_Smoke_01
+        Slot: PolygonParticleFX_VertexLitBlended_Light (Uses custom shader)
+    Mesh Name: FX_Grenade_Smoke_Delayed_01
+        Slot: PolygonParticleFX_VertexLitBlended_Light (Uses custom shader)
+
+Prefab Name: FX_GroundCrack_Blast_01
+    Mesh Name: FX_GroundCrack_Blast_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_GroundCrack_Dust_01
+        Slot: Default-Particle (Uses custom shader)
+    Mesh Name: FX_GroundCrack_01
+        Slot: PolygonParticleFX_GroundBreaking (Uses custom shader)
+
+Prefab Name: FX_Gunshot_01
+    Mesh Name: FX_Gunshot_01
+        Slot: Sprites-Default (Uses custom shader)
+    Mesh Name: FX_Gunshot_Flash
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Gunshot_BarrelSmoke_01
+    Mesh Name: FX_Gunshot_BarrelSmoke_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Gunshot_Heavy_Repeating_01
+    Mesh Name: FX_Gunshot_Heavy_Repeating_01
+        Slot: Sprites-Default (Uses custom shader)
+    Mesh Name: FX_Gunshot_Heavy_Repeating_Flash_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Gunshot_Heavy_Repeating_Tracers_01
+    Mesh Name: FX_Gunshot_Heavy_Repeating_Tracers_01
+        Slot: Sprites-Default (Uses custom shader)
+    Mesh Name: FX_Gunshot_Tracer_MachineGun_01
+        Slot: PolygonParticleFX_Emission (PolygonParticles_BulletTrail)
+    Mesh Name: FX_Gunshot_Tracer_MachineGun_Smoke_01
+        Slot: Default-Particle (Uses custom shader)
+    Mesh Name: FX_Gunshot_Heavy_Repeating_Flash_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Gunshot_Heavy_Repeating_Tracers_Impact_01
+    Mesh Name: FX_Gunshot_Heavy_Repeating_Tracers_Impact_01
+        Slot: Sprites-Default (Uses custom shader)
+    Mesh Name: FX_Gunshot_Heavy_Impact_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Gunshot_Heavy_Impact_02
+        Slot: PolygonParticleFX_Cutout_Round_VertexLit (Uses custom shader)
+    Mesh Name: FX_Gunshot_Heavy_Impact_Dust_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+    Mesh Name: FX_Gunshot_Tracer_MachineGun_01
+        Slot: PolygonParticleFX_Emission (PolygonParticles_BulletTrail)
+    Mesh Name: FX_Gunshot_Tracer_MachineGun_Smoke_01
+        Slot: Default-Particle (Uses custom shader)
+    Mesh Name: FX_Gunshot_Heavy_Repeating_Flash_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Gunshot_Heavy_Single_Tracers_01
+    Mesh Name: FX_Gunshot_Heavy_Single_Tracers_01
+        Slot: Sprites-Default (Uses custom shader)
+    Mesh Name: FX_Gunshot_Tracer_Single_01
+        Slot: PolygonParticleFX_Emission (PolygonParticles_BulletTrail)
+    Mesh Name: FX_Gunshot_Tracer_Single_Smoke_01
+        Slot: Default-Particle (Uses custom shader)
+    Mesh Name: FX_Gunshot_Heavy_Flash_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Gunshot_Repeating
+    Mesh Name: FX_Gunshot_Repeating
+        Slot: Sprites-Default (Uses custom shader)
+    Mesh Name: FX_Gunshot_Flash
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Gunshot_Shotgun_01
+    Mesh Name: FX_Gunshot_Shotgun_01
+        Slot: Sprites-Default (Uses custom shader)
+    Mesh Name: FX_Gunshot_Shotgun_Flash_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Gunshot_Sniper_Line_01
+    Mesh Name: FX_Gunshot_Sniper_Line_01
+        Slot: Sprites-Default (Uses custom shader)
+    Mesh Name: FX_Gunshot_Tracer_Sniper_01
+        Slot: PolygonParticleFX_Emission (PolygonParticles_BulletTrail)
+    Mesh Name: FX_Gunshot_Sniper_Impact_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Gunshot_Sniper_Impact_02
+        Slot: PolygonParticleFX_Cutout_Round_VertexLit (Uses custom shader)
+    Mesh Name: FX_Gunshot_Sniper_Impact_Dust_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+    Mesh Name: FX_Gunshot_Tracer_MachineGun_Smoke_01
+        Slot: Default-Particle (Uses custom shader)
+    Mesh Name: FX_Gunshot_Flash_Long
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Gunshot_Flash_Wide
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Healing_Cirle_01
+    Mesh Name: FX_Healing_Cirle_01
+        Slot: PolygonParticleFX_RitualCircle_01 (Uses custom shader)
+    Mesh Name: FX_Healing_Spirals_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Healing_Sparkles_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+
+Prefab Name: FX_Healing_Cirle_02
+    Mesh Name: FX_Healing_Cirle_02
+        Slot: PolygonParticleFX_RitualCircle_01 (Uses custom shader)
+    Mesh Name: FX_Healing_Cirle_Sparkles_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+    Mesh Name: FX_Healing_Cirle_Swirl_01
+        Slot: PolygonParticleFX_HalfCircle (Uses custom shader)
+    Mesh Name: FX_Healing_Cirle_Beams_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+
+Prefab Name: FX_Heal_01
+    Mesh Name: FX_Heal_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_Heal_Sparkles_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+
+Prefab Name: FX_Heal_02
+    Mesh Name: FX_Heal_02
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_Heal_Sparkles_02
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+    Mesh Name: FX_Heal_Symbol_02
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Hexagon_01
+    Mesh Name: FX_Hexagon_01
+        Slot: PolygonParticleFX_Hexagon (Uses custom shader)
+
+Prefab Name: FX_Hexagon_02
+    Mesh Name: FX_Hexagon_02
+        Slot: PolygonParticleFX_Hexagon (Uses custom shader)
+
+Prefab Name: FX_Impact_Dirt_01
+    Mesh Name: FX_Impact_Dirt_01
+        Slot: PolygonParticleFX_Cutout_Round_VertexLit (Uses custom shader)
+    Mesh Name: FX_Impact_Dust_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Impact_Large_01
+    Mesh Name: FX_Impact_Large_01
+        Slot: PolygonParticleFX_Cutout_Round_VertexLit (Uses custom shader)
+    Mesh Name: FX_Impact_Large_Dust_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Impact_Metal_01
+    Mesh Name: FX_Impact_Metal_01
+        Slot: PolygonParticleFX_Cutout_Round_VertexLit (Uses custom shader)
+    Mesh Name: FX_Impact_Metal_02
+        Slot: PolygonParticleFX_Cutout_Round_VertexLit (Uses custom shader)
+
+Prefab Name: FX_Impact_Small_01
+    Mesh Name: FX_Impact_Small_01
+        Slot: PolygonParticleFX_Cutout_Round_VertexLit (Uses custom shader)
+    Mesh Name: FX_Impact_Small_Dust_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Impact_Stone_01
+    Mesh Name: FX_Impact_Stone_01
+        Slot: PolygonParticleFX_Rock_01 (No Albedo Texture)
+    Mesh Name: FX_Impact_Dust_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Impact_Water_01
+    Mesh Name: FX_Impact_Water_01
+        Slot: PolygonParticleFX_Cutout_Round_VertexLit (Uses custom shader)
+    Mesh Name: FX_Impact_Small_Dust_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Impact_Water_Ripple_01
+    Mesh Name: FX_Impact_Water_Ripple_01
+        Slot: PolygonParticleFX_Cutout_Round_VertexLit (Uses custom shader)
+    Mesh Name: FX_Impact_Water_Ripple_01
+        Slot: PolygonParticleFX_SemiCircle (Uses custom shader)
+    Mesh Name: FX_Impact_Small_Dust_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Impact_Wood_01
+    Mesh Name: FX_Impact_Wood_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+    Mesh Name: FX_Impact_Dust_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_LazerBeam_01
+    Mesh Name: FX_LazerBeam_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_LazerBeam_Fire_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_PowerBeam_Fire_Impact_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_LazerBeam_Fire_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_PowerBeam_Swirl_01
+        Slot: PolygonParticleFX_HalfCircle (Uses custom shader)
+    Mesh Name: FX_PowerBeam_Flash_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_PowerBeam_Glow_01
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_PowerBeam_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_Leaves_Blossom_01
+    Mesh Name: FX_Leaves_Blossom_01
+        Slot: PolygonParticleFX_Leaves (Uses custom shader)
+
+Prefab Name: FX_Leaves_Green_01
+    Mesh Name: FX_Leaves_Green_01
+        Slot: PolygonParticleFX_Leaves (Uses custom shader)
+
+Prefab Name: FX_LevelUp_01
+    Mesh Name: FX_LevelUp_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_LevelUp_Swirl_01
+        Slot: PolygonParticleFX_HalfCircle (Uses custom shader)
+    Mesh Name: FX_LevelUp_Sparkles_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+    Mesh Name: FX_LevelUp_Beams_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+
+Prefab Name: FX_LightningStrike_01
+    Mesh Name: FX_LightningStrike_01
+        Slot: PolygonParticleFX_Lightning (Uses custom shader)
+    Mesh Name: FX_LightningStrike_Ground_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_LightningStrike_Impact_Dust_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+    Mesh Name: FX_LightningStrike_Impact_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_LightRayCube_01
+    Mesh Name: SM_LightRay_Cube
+        Slot: PolygonParticleFX_LightRay_Cube (Uses custom shader)
+
+Prefab Name: FX_LightRayRound_01
+    Mesh Name: SM_LightRay_Round
+        Slot: PolygonParticleFX_LightRay_Cube (Uses custom shader)
+
+Prefab Name: FX_MagicBlast_01
+    Mesh Name: FX_MagicBlast_01
+        Slot: PolygonParticleFX_Fumes (Uses custom shader)
+    Mesh Name: FX_MagicBlast_Ground_01
+        Slot: PolygonParticleFX_Fumes (Uses custom shader)
+
+Prefab Name: FX_MagicBlast_02
+    Mesh Name: FX_MagicBlast_02
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_MagicBlast_Ground_02
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+
+Prefab Name: FX_MagicBug_Trails_01
+    Mesh Name: FX_MagicBug_Trails_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Magic_Lights_01
+    Mesh Name: FX_Magic_Lights_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+
+Prefab Name: FX_Missile_01
+    Mesh Name: FX_Missile_01
+        Slot: PolygonParticleFX_Shell (Uses custom shader)
+        Slot: PolygonParticleFX_Wind (Uses custom shader)
+    Mesh Name: FX_Missile_Smoke_Trail_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+    Mesh Name: FX_Missile_Explosion_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Missile_Explosion_Flash_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Missile_Explosion_Blast_01
+        Slot: PolygonParticleFX_Material (Uses custom shader)
+    Mesh Name: FX_Missile_Explosion_Smoke_01
+        Slot: PolygonParticleFX_Material (Uses custom shader)
+    Mesh Name: FX_Missile_Explosion_Smoke_02
+        Slot: PolygonParticleFX_Material (Uses custom shader)
+    Mesh Name: FX_Missile_Explosion_Debris_01
+        Slot: PolygonParticleFX_Rock_01 (No Albedo Texture)
+
+Prefab Name: FX_Money_Coins_01
+    Mesh Name: FX_Money_Coins_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+
+Prefab Name: FX_Money_Coins_Burst_01
+    Mesh Name: FX_Money_Coins_Burst_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+
+Prefab Name: FX_Money_Coins_Shooting_01
+    Mesh Name: FX_Money_Coins_Shooting_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+
+Prefab Name: FX_Money_Notes_01
+    Mesh Name: FX_Money_Notes_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+
+Prefab Name: FX_Money_Notes_Burst_01
+    Mesh Name: FX_Money_Notes_Burst_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+
+Prefab Name: FX_Money_Notes_Shooting_01
+    Mesh Name: FX_Money_Notes_Shooting_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+
+Prefab Name: FX_Nuke_01
+    Mesh Name: FX_Nuke_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Nuke_Rings
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Nuke_FirstWave
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Nuke_SecondWave
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Nuke_BigBang
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Nuke_CloudBig
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Nuke_CloudRing
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Nuke_CloudStart
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Nuke_Light
+
+Prefab Name: FX_Nuke_Smaller_01
+    Mesh Name: FX_Nuke_Smaller_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Nuke_Rings
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Nuke_FirstWave
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Nuke_SecondWave
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Nuke_BigBang
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Nuke_CloudBig
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Nuke_CloudRing
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Nuke_CloudStart
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Nuke_Light
+
+Prefab Name: FX_Pickup_Ammo_01
+    Mesh Name: FX_Pickup_Ammo_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Pickup_Beams_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_Pickup_Sparkles_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+    Mesh Name: FX_Pickup_Glow_01
+        Slot: PolygonParticleFX_Soft_Spot (Uses custom shader)
+
+Prefab Name: FX_Pickup_Boost_01
+    Mesh Name: FX_Pickup_Boost_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Pickup_Beams_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_Pickup_Sparkles_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+    Mesh Name: FX_Pickup_Glow_01
+        Slot: PolygonParticleFX_Soft_Spot (Uses custom shader)
+
+Prefab Name: FX_Pickup_Death_01
+    Mesh Name: FX_Pickup_Death_01
+        Slot: PolygonParticleFX_Dark (No Albedo Texture)
+    Mesh Name: FX_Pickup_Beams_01
+        Slot: PolygonParticleFX_Fumes_02 (Uses custom shader)
+    Mesh Name: FX_Pickup_Sparkles_01
+        Slot: PolygonParticleFX_Cutout_Round_Dark (Uses custom shader)
+    Mesh Name: FX_Pickup_Glow_01
+        Slot: PolygonParticleFX_Soft_Spot 1 (Uses custom shader)
+
+Prefab Name: FX_Pickup_Health_01
+    Mesh Name: FX_Pickup_Health_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Pickup_Beams_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_Pickup_Sparkles_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+    Mesh Name: FX_Pickup_Glow_01
+        Slot: PolygonParticleFX_Soft_Spot (Uses custom shader)
+
+Prefab Name: FX_Pickup_Heart_01
+    Mesh Name: FX_Pickup_Heart_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Pickup_Beams_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_Pickup_Sparkles_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+    Mesh Name: FX_Pickup_Glow_01
+        Slot: PolygonParticleFX_Soft_Spot (Uses custom shader)
+
+Prefab Name: FX_Pickup_Question_01
+    Mesh Name: FX_Pickup_Question_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Pickup_Beams_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_Pickup_Sparkles_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+    Mesh Name: FX_Pickup_Glow_01
+        Slot: PolygonParticleFX_Soft_Spot (Uses custom shader)
+
+Prefab Name: FX_Poison_Green_01
+    Mesh Name: FX_Poison_Green_01
+        Slot: PolygonParticleFX_Bubble (Uses custom shader)
+    Mesh Name: FX_Poison_Green_Smoke_01
+        Slot: PolygonParticleFX_Smoke_Mat_05 (Uses custom shader)
+
+Prefab Name: FX_Poison_Purple_01
+    Mesh Name: FX_Poison_Purple_01
+        Slot: PolygonParticleFX_Bubble (Uses custom shader)
+    Mesh Name: FX_Poison_Purple_Smoke_01
+        Slot: PolygonParticleFX_Smoke_Mat_05 (Uses custom shader)
+
+Prefab Name: FX_Portal_Round_01
+    Mesh Name: FX_Portal_Round_01
+        Slot: PolygonParticleFX_Portal_01 (Uses custom shader)
+    Mesh Name: FX_Portal_01_Open
+        Slot: PolygonParticleFX_Portal_01 (Uses custom shader)
+    Mesh Name: FX_Electricity_01_Open
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Electricity_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Portal_Dots_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Portal_Sphere_01
+    Mesh Name: FX_Portal_Sphere_01
+        Slot: PolygonParticleFX_Portal_01 (Uses custom shader)
+    Mesh Name: FX_Portal_01_Open
+        Slot: PolygonParticleFX_Portal_01 (Uses custom shader)
+    Mesh Name: FX_Electricity_01_Open
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Electricity_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Portal_Dots_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Portal_Thin_01
+    Mesh Name: FX_Portal_Thin_01
+        Slot: PolygonParticleFX_Portal_01 (Uses custom shader)
+    Mesh Name: FX_Portal_01_Open
+        Slot: PolygonParticleFX_Portal_01 (Uses custom shader)
+    Mesh Name: FX_Electricity_01_Open
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Electricity_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Portal_Dots_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_PowerBeam_01
+    Mesh Name: FX_PowerBeam_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_PowerBeam_Impact_01
+        Slot: PolygonParticleFX_Sparkle 1 (Uses custom shader)
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_PowerBeam_Electricity_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_PowerBeam_ImpactSoft_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_PowerBeam_Swirl_01
+        Slot: PolygonParticleFX_HalfCircle (Uses custom shader)
+    Mesh Name: FX_PowerBeam_Flash_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_PowerBeam_Glow_01
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_PowerBeam_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_PowerDraw_01
+    Mesh Name: FX_PowerDraw_01
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_PowerDraw_Electricity_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_PowerDraw_Shoot_01
+    Mesh Name: FX_PowerDraw_Shoot_01
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_PowerDraw_Electricity_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_PowerBeam_Glow_01
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_PowerBeam_Shine
+        Slot: PolygonParticleFX_Sparkle 1 (Uses custom shader)
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_PowerBeam_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_PowerBeam_Impact_01
+        Slot: PolygonParticleFX_Sparkle 1 (Uses custom shader)
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_PowerBeam_Electricity_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_PowerBeam_ImpactSoft_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_PowerBeam_Swirl_01
+        Slot: PolygonParticleFX_HalfCircle (Uses custom shader)
+    Mesh Name: FX_PowerBeam_Flash_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_PowerBeam_Glow_01
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_PowerBeam_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_RainbowGlow_01
+    Mesh Name: FX_RainbowGlow_01
+        Slot: PolygonParticleFX_Sparkle 1 (Uses custom shader)
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_RainbowGlow_Sparkles_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+    Mesh Name: FX_RainbowGlow_Ring_01
+        Slot: PolygonParticleFX_Rainbow_FX (Uses custom shader)
+
+Prefab Name: FX_RainbowGlow_02
+    Mesh Name: FX_RainbowGlow_02
+        Slot: PolygonParticleFX_Sparkle 1 (Uses custom shader)
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_RainbowGlow_Sparkles_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+    Mesh Name: FX_RainbowGlow_Ring_01
+        Slot: PolygonParticleFX_Rainbow_FX (Uses custom shader)
+
+Prefab Name: FX_RainbowSparkle_01
+    Mesh Name: FX_RainbowSparkle_01
+        Slot: PolygonParticleFX_Sparkle 1 (Uses custom shader)
+    Mesh Name: FX_RainbowSparkle_Ring_01
+        Slot: PolygonParticleFX_Rainbow_FX (Uses custom shader)
+    Mesh Name: FX_RainbowSparkle_Ring_02
+        Slot: PolygonParticleFX_Rainbow_FX (Uses custom shader)
+    Mesh Name: FX_RainbowSparkle_Sparkles_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+
+Prefab Name: FX_Rain_01
+    Mesh Name: FX_Rain_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_Rain_Collision_01
+    Mesh Name: FX_Rain_Collision_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_Rain_Collision_Splash_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Ritual_Circle_01
+    Mesh Name: FX_Ritual_Circle_01
+        Slot: PolygonParticleFX_RitualCircle_01 (Uses custom shader)
+    Mesh Name: FX_Electricity_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Portal_Dots_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_ShardIce_Explosion_01
+    Mesh Name: FX_ShardIce_Explosion_01
+        Slot: PolygonParticleFX_Ice_01 (No Albedo Texture)
+    Mesh Name: FX_ShardIce_Dust_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardIce_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardIce_Blast_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_ShardIce_Dust_End_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardIce_Debris_End_01
+        Slot: PolygonParticleFX_Ice_01 (No Albedo Texture)
+    Mesh Name: FX_ShardIce_Embers_End_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardIce_Smaller_01
+        Slot: PolygonParticleFX_Ice_01 (No Albedo Texture)
+    Mesh Name: FX_ShardIce_Dust_End_02
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardIce_Debris_End_02
+        Slot: PolygonParticleFX_Ice_01 (No Albedo Texture)
+    Mesh Name: FX_ShardIce_Embers_End_02
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_ShardIce_Shooting_01
+    Mesh Name: FX_ShardIce_Shooting_01
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_ShardIce_Smaller_Trail_01
+        Slot: PolygonParticleFX_Ice_01 (No Albedo Texture)
+    Mesh Name: FX_ShardIce_Debris_02
+        Slot: PolygonParticleFX_Ice_01 (No Albedo Texture)
+    Mesh Name: FX_ShardIce_Dust_03
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardIce_Embers_03
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardIce_Dust_Trail_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardIce_Blast_Trail_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_ShardIce_Embers_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardIce_Debris_End_03
+        Slot: PolygonParticleFX_Ice_01 (No Albedo Texture)
+    Mesh Name: FX_ShardIce_Explosion_01
+        Slot: PolygonParticleFX_Ice_01 (No Albedo Texture)
+    Mesh Name: FX_ShardIce_Dust_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardIce_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardIce_Blast_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_ShardIce_Smaller_01
+        Slot: PolygonParticleFX_Ice_01 (No Albedo Texture)
+    Mesh Name: FX_ShardIce_Dust_End_02
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardIce_Embers_End_02
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardIce_Debris_End_02
+        Slot: PolygonParticleFX_Ice_01 (No Albedo Texture)
+    Mesh Name: FX_ShardIce_Dust_End_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardIce_Embers_End_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardIce_Debris_End_01
+        Slot: PolygonParticleFX_Ice_01 (No Albedo Texture)
+
+Prefab Name: FX_ShardMagic_Explosion_01
+    Mesh Name: FX_ShardMagic_Explosion_01
+        Slot: PolygonParticleFX_Ice_02 (No Albedo Texture)
+    Mesh Name: FX_ShardIce_Dust_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardIce_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardIce_Dust_End_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardIce_Embers_End_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardIce_Debris_End_01
+        Slot: PolygonParticleFX_Ice_02 (No Albedo Texture)
+    Mesh Name: FX_ShardIce_Blast_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_ShardIce_Smaller_01
+        Slot: PolygonParticleFX_Ice_02 (No Albedo Texture)
+    Mesh Name: FX_ShardIce_Dust_End_02
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardIce_Embers_End_02
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardIce_Debris_End_02
+        Slot: PolygonParticleFX_Ice_02 (No Albedo Texture)
+
+Prefab Name: FX_ShardMagic_Shooting_01
+    Mesh Name: FX_ShardMagic_Shooting_01
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_ShardMagic_Smaller_Trail_01
+        Slot: PolygonParticleFX_Ice_02 (No Albedo Texture)
+    Mesh Name: FX_ShardMagic_Debris_02
+        Slot: PolygonParticleFX_Ice_02 (No Albedo Texture)
+    Mesh Name: FX_ShardMagic_Dust_03
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardMagic_Embers_03
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardMagic_Dust_Trail_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardMagic_Blast_Trail_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_ShardMagic_Embers_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardMagic_Debris_End_03
+        Slot: PolygonParticleFX_Ice_02 (No Albedo Texture)
+    Mesh Name: FX_ShardMagic_Explosion_01
+        Slot: PolygonParticleFX_Ice_02 (No Albedo Texture)
+    Mesh Name: FX_ShardMagic_Dust_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardMagic_Dust_End_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardMagic_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardMagic_Embers_End_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardMagic_Blast_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_ShardMagic_Smaller_01
+        Slot: PolygonParticleFX_Ice_02 (No Albedo Texture)
+    Mesh Name: FX_ShardMagic_Dust_End_02
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardMagic_Embers_End_02
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardMagic_Debris_End_02
+        Slot: PolygonParticleFX_Ice_02 (No Albedo Texture)
+    Mesh Name: FX_ShardMagic_Debris_End_01
+        Slot: PolygonParticleFX_Ice_02 (No Albedo Texture)
+
+Prefab Name: FX_ShardRock_Explosion_01
+    Mesh Name: FX_ShardRock_Explosion_01
+        Slot: PolygonParticleFX_Rock_01 (No Albedo Texture)
+    Mesh Name: FX_ShardRock_Dust_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardRock_Dust_End_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardRock_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardRock_Embers_End_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardRock_Blast_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_ShardRock_Smaller_01
+        Slot: PolygonParticleFX_Rock_01 (No Albedo Texture)
+    Mesh Name: FX_ShardRock_Dust_End_02
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardRock_Embers_End_02
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardRock_Debris_End_02
+        Slot: PolygonParticleFX_Rock_01 (No Albedo Texture)
+    Mesh Name: FX_ShardRock_Debris_End_01
+        Slot: PolygonParticleFX_Rock_01 (No Albedo Texture)
+
+Prefab Name: FX_ShardRock_Shooting_01
+    Mesh Name: FX_ShardRock_Shooting_01
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_ShardRock_Smaller_Trail_01
+        Slot: PolygonParticleFX_Rock_01 (No Albedo Texture)
+    Mesh Name: FX_ShardRock_Debris_02
+        Slot: PolygonParticleFX_Rock_01 (No Albedo Texture)
+    Mesh Name: FX_ShardRock_Dust_03
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardRock_Embers_03
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardRock_Dust_Trail_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardRock_Blast_Trail_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_ShardRock_Embers_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardRock_Explosion_01
+        Slot: PolygonParticleFX_Rock_01 (No Albedo Texture)
+    Mesh Name: FX_ShardRock_Dust_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardRock_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardRock_Blast_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_ShardRock_Smaller_01
+        Slot: PolygonParticleFX_Rock_01 (No Albedo Texture)
+    Mesh Name: FX_ShardRock_Dust_End_02
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardRock_Embers_End_02
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardRock_Debris_End_02
+        Slot: PolygonParticleFX_Rock_01 (No Albedo Texture)
+    Mesh Name: FX_ShardRock_Dust_End_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardRock_Embers_End_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardRock_Debris_End_01
+        Slot: PolygonParticleFX_Rock_01 (No Albedo Texture)
+    Mesh Name: FX_ShardRock_Debris_End_03
+        Slot: PolygonParticleFX_Rock_01 (No Albedo Texture)
+
+Prefab Name: FX_ShardVine_Explosion_01
+    Mesh Name: FX_ShardVine_Explosion_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+    Mesh Name: FX_ShardVine_Dust_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardVine_Dust_End_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardVine_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardVine_Embers_End_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardVine_Blast_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_ShardVine_Smaller_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+    Mesh Name: FX_ShardVine_Dust_End_02
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardVine_Embers_End_02
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardVine_Debris_End_02
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+    Mesh Name: FX_ShardVine_Debris_End_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+
+Prefab Name: FX_ShardVine_Shooting_01
+    Mesh Name: FX_ShardVine_Shooting_01
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_ShardVine_Smaller_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+    Mesh Name: FX_ShardVine_Debris_02
+        Slot: PolygonParticleFX_Rock_01 (No Albedo Texture)
+    Mesh Name: FX_ShardVine_Dust_03
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardVine_Embers_03
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardVine_Dust_Trail_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardVine_Blast_Trail_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_ShardVine_Embers_Trail_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardVine_Explosion_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+    Mesh Name: FX_ShardVine_Dust_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardVine_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardVine_Blast_01
+        Slot: PolygonParticleFX_Fumes_01 (Uses custom shader)
+    Mesh Name: FX_ShardVine_Smaller_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+    Mesh Name: FX_ShardVine_Dust_End_02
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardVine_Embers_End_02
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardVine_Debris_End_02
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+    Mesh Name: FX_ShardVine_Dust_End_01
+        Slot: PolygonParticleFX_Default_01 (Uses custom shader)
+    Mesh Name: FX_ShardVine_Embers_End_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_ShardVine_Debris_End_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+    Mesh Name: FX_ShardVine_Debris_End_03
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+
+Prefab Name: FX_Shell_Ejection_01
+    Mesh Name: FX_Shell_Ejection_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Shell_Ejection_Large_01
+    Mesh Name: FX_Shell_Ejection_Large_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Shell_Ejection_Repeating_01
+    Mesh Name: FX_Shell_Ejection_Repeating_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Shell_Ejection_Repeating_Large_01
+    Mesh Name: FX_Shell_Ejection_Repeating_Large_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Shell_Ejection_Repeating_Small_01
+    Mesh Name: FX_Shell_Ejection_Repeating_Small_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Shell_Ejection_Small_01
+    Mesh Name: FX_Shell_Ejection_Small_01
+        Slot: PolygonParticles_Material_01_A (PolygonParticles_Texture_01_A)
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+
+Prefab Name: FX_Slash_01
+    Mesh Name: FX_Slash_01
+        Slot: PolygonParticleFX_Swipe_Grid (Uses custom shader)
+
+Prefab Name: FX_Slash_Large_01
+    Mesh Name: FX_Slash_Large_01
+        Slot: PolygonParticleFX_Swipe_Grid (Uses custom shader)
+
+Prefab Name: FX_Smoke_Black_01
+    Mesh Name: FX_Smoke_Black_01
+        Slot: PolygonParticleFX_VertexLitBlended_Dark (Uses custom shader)
+
+Prefab Name: FX_Smoke_Black_Large_01
+    Mesh Name: FX_Smoke_Black_Large_01
+        Slot: PolygonParticleFX_VertexLitBlended_Dark (Uses custom shader)
+
+Prefab Name: FX_Smoke_Black_Small_01
+    Mesh Name: FX_Smoke_Black_Small_01
+        Slot: PolygonParticleFX_VertexLitBlended_Dark (Uses custom shader)
+
+Prefab Name: FX_Smoke_Trail_Large_01
+    Mesh Name: FX_Smoke_Trail_Large_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Smoke_Trail_Small_01
+    Mesh Name: FX_Smoke_Trail_Small_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Smoke_White_01
+    Mesh Name: FX_Smoke_White_01
+        Slot: PolygonParticleFX_VertexLitBlended_Light (Uses custom shader)
+
+Prefab Name: FX_Smoke_White_Large_01
+    Mesh Name: FX_Smoke_White_Large_01
+        Slot: PolygonParticleFX_VertexLitBlended_Light (Uses custom shader)
+
+Prefab Name: FX_Smoke_White_Small_01
+    Mesh Name: FX_Smoke_White_Small_01
+        Slot: PolygonParticleFX_VertexLitBlended_Light (Uses custom shader)
+
+Prefab Name: FX_Snow_01
+    Mesh Name: FX_Snow_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Sparkles_Large_01
+    Mesh Name: FX_Sparkles_Large_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+
+Prefab Name: FX_Sparkles_Small_01
+    Mesh Name: FX_Sparkles_Small_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+
+Prefab Name: FX_Sparkles_Trail_01
+    Mesh Name: FX_Sparkles_Trail_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+
+Prefab Name: FX_Sparkle_Orbit_01
+    Mesh Name: FX_Sparkle_Orbit_01
+        Slot: PolygonParticleFX_Sparkle 1 (Uses custom shader)
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+
+Prefab Name: FX_Sparkle_Orbit_02
+    Mesh Name: FX_Sparkle_Orbit_02
+        Slot: PolygonParticleFX_Sparkle 1 (Uses custom shader)
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+
+Prefab Name: FX_Sparks_01
+    Mesh Name: FX_Sparks_01
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_Sparks_Glow_01
+        Slot: PolygonParticleFX_Sparkle 1 (Uses custom shader)
+    Mesh Name: FX_Sparks_02
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+
+Prefab Name: FX_StarStunned_01
+    Mesh Name: FX_StarStunned_01
+        Slot: PolygonParticleFX_Additive_Soft (Uses custom shader)
+    Mesh Name: FX_StarStunned_Smoke_01
+        Slot: PolygonParticleFX_Smoke_Mat_05 (Uses custom shader)
+
+Prefab Name: FX_StarStunned_02
+    Mesh Name: FX_StarStunned_02
+        Slot: PolygonParticleFX_Additive_Soft (Uses custom shader)
+    Mesh Name: FX_StarStunned_Smoke_01
+        Slot: PolygonParticleFX_Additive_Soft (Uses custom shader)
+    Mesh Name: FX_StarStunned_Smoke_02
+        Slot: PolygonParticleFX_Additive_Soft (Uses custom shader)
+
+Prefab Name: FX_Steam_01
+    Mesh Name: FX_Steam_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Steam_02
+    Mesh Name: FX_Steam_02
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_Steam_03
+    Mesh Name: FX_Steam_03
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_SunBeam_Large_01
+    Mesh Name: FX_SunBeam_Large_01
+        Slot: PolygonParticleFX_Sun_Beams (Uses custom shader)
+
+Prefab Name: FX_SunBeam_Small_01
+    Mesh Name: FX_SunBeam_Small_01
+        Slot: PolygonParticleFX_Sun_Beams (Uses custom shader)
+
+Prefab Name: FX_Swirl_01
+    Mesh Name: FX_Swirl_01
+        Slot: PolygonParticleFX_HalfCircle (Uses custom shader)
+
+Prefab Name: FX_Swirl_02
+    Mesh Name: FX_Swirl_02
+        Slot: PolygonParticleFX_HalfCircle (Uses custom shader)
+    Mesh Name: FX_Swirl_Sparkles_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+
+Prefab Name: FX_Swirl_03
+    Mesh Name: FX_Swirl_03
+        Slot: PolygonParticleFX_HalfCircle (Uses custom shader)
+    Mesh Name: FX_Swirl_Sparkles_01
+        Slot: PolygonParticleFX_Sparkle (Uses custom shader)
+
+Prefab Name: FX_Swirl_Fast_01
+    Mesh Name: FX_Swirl_Fast_01
+        Slot: PolygonParticleFX_HalfCircle (Uses custom shader)
+
+Prefab Name: FX_SwordSlash_01
+    Mesh Name: FX_SwordSlash_01
+        Slot: PolygonParticleFX_Swipe_02 (Uses custom shader)
+    Mesh Name: FX_SwordSlash_Sparks_Up_01
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_SwordSlash_Sparks_Down_01
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_SwordSlash_Hit_01
+        Slot: PolygonParticleFX_Sparkle 1 (Uses custom shader)
+    Mesh Name: FX_SwordSlash_Sparks_Sideways_01
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+
+Prefab Name: FX_SwordStab_01
+    Mesh Name: FX_SwordStab_01
+        Slot: PolygonParticleFX_Fumes (Uses custom shader)
+    Mesh Name: FX_SwordSlash_Hit_01
+        Slot: PolygonParticleFX_Sparkle 1 (Uses custom shader)
+    Mesh Name: FX_SwordSlash_Sparks_01
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+    Mesh Name: FX_SwordSlash_Sparks_02
+        Slot: PolygonParticleFX_Cutout_Round 1 (Uses custom shader)
+
+Prefab Name: FX_Trail_Debris_01
+    Mesh Name: FX_Trail_Debris_01
+        Slot: PolygonParticleFX_Rock_01 (No Albedo Texture)
+
+Prefab Name: FX_Trail_Dust_01
+    Mesh Name: FX_Trail_Dust_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_Trail_Exhaust_01
+    Mesh Name: FX_Trail_Exhaust_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_Trail_Fire_01
+    Mesh Name: FX_Trail_Fire_01
+        Slot: PolygonParticleFX_Default (Uses custom shader)
+    Mesh Name: FX_Trail_Fire_Embers_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+
+Prefab Name: FX_WaterDrip_01
+    Mesh Name: FX_WaterDrip_01
+        Slot: PolygonParticleFX_Circle (Uses custom shader)
+    Mesh Name: FX_WaterDrip_Splash_01
+        Slot: PolygonParticleFX_Cutout_Round (Uses custom shader)
+
+Prefab Name: FX_WaterRipple_01
+    Mesh Name: FX_WaterRipple_01
+        Slot: PolygonParticleFX_SemiCircle (Uses custom shader)
+    Mesh Name: FX_WaterRipple_Trail_01
+        Slot: PolygonParticleFX_SemiCircle (Uses custom shader)
+
+Prefab Name: FX_Wind_01
+    Mesh Name: FX_Wind_01
+        Slot: PolygonParticleFX_Empty (Uses custom shader)
+        Slot: PolygonParticleFX_Wind (Uses custom shader)
+
+Prefab Name: FX_Wind_Hard_01
+    Mesh Name: FX_Wind_Hard_01
+        Slot: PolygonParticleFX_Empty (Uses custom shader)
+        Slot: PolygonParticleFX_Wind (Uses custom shader)
+
+Prefab Name: FX_Wind_Soft_01
+    Mesh Name: FX_Wind_Soft_01
+        Slot: PolygonParticleFX_Empty (Uses custom shader)
+        Slot: PolygonParticleFX_Wind (Uses custom shader)
+

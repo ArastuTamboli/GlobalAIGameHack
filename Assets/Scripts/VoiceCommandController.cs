@@ -1,10 +1,8 @@
 using Neocortex;
 using Neocortex.Data;
 using System.Linq;
-using System.Text.RegularExpressions;
 using UnityEngine;
-using UnityEngine.Audio;
-using static NeocortexCameraObject;
+
 
 public class VoiceCommandController : MonoBehaviour
 {
@@ -13,16 +11,17 @@ public class VoiceCommandController : MonoBehaviour
     public NeocortexAudioReceiver audioReceiver;
     public CameraController cameraController;
     public TowerManager towerManager;
-    public GridSystem gridSystem;
+    public CameraSystem gridSystem;
 
-    [Header("Settings")]
-    public bool autoStartRecording = false;
-    public float recordingDuration = 5f;
+    //[Header("Settings")]
+    //public bool autoStartRecording = false;
+    //public float recordingDuration = 5f;
 
-    private bool isProcessing = false;
+    //private bool isProcessing = false;
 
     void Start()
     {
+        StartVoiceInput();
         if (smartAgent == null)
             smartAgent = GetComponent<NeocortexSmartAgent>();
         if (audioReceiver == null)
@@ -50,7 +49,8 @@ public class VoiceCommandController : MonoBehaviour
     void OnAudioRecorded(AudioClip audioClip)
     {
         Debug.Log($"Audio recorded: {audioClip.samples} samples");
-        smartAgent.AudioToText(audioClip);
+      //  smartAgent.AudioToText(audioClip);
+        smartAgent.AudioToAudio(audioClip);
     }
 
     void OnTranscriptionReceived(string transcription)
@@ -68,28 +68,23 @@ public class VoiceCommandController : MonoBehaviour
             Debug.Log($"Meta: {item.name}");
         }
         // isProcessing = false;
-        Interactable gridCell = null;
-        Interactable towerData = null;
-        Interactable camera = null;
+
+        Interactable tower = null;
+        Interactable cameraPos = null;
         Interactable[] interactables = response.metadata.Where(i => i.isSubject).ToArray();
         foreach (var i in interactables)
         {
             Debug.Log($"Interactable: type={i.type}, name={i.name}");
 
-            if (i.type == Interactables.GRID.ToString())
+            if (i.type == Interactables.TOWER.ToString())
             {
-                gridCell = i;
-                Debug.Log($"Found grid cell: {i.name}");
-            }
-            else if (i.type == Interactables.TOWER.ToString())
-            {
-                towerData = i;
+                tower = i;
                 Debug.Log($"tower: {i.name}");
             }
-            else if(i.type == Interactables.CAMERA.ToString())
+            else if(i.type == Interactables.CAMPOS.ToString())
             {
-                Debug.Log($"Found camera: {i.name}");
-                camera = i; 
+                Debug.Log($"camera pos: {i.name}");
+                cameraPos = i; 
             }
         }
 
@@ -97,21 +92,19 @@ public class VoiceCommandController : MonoBehaviour
         if (!string.IsNullOrEmpty(action))
         {
             
-                if (action == "GO_TO_GRID" && camera != null)
+                if (action == "GO_TO_GRID" && cameraPos != null)
                 {
-                    Debug.Log($"{action} {camera.name}");
+                    Debug.Log($"{action} {cameraPos.name}");
 
-                    MoveCamera(camera.position);
+                    MoveCamera(cameraPos.position);
 
                 }
-                else if (action == "SPAWN_TOWER" && towerData !=null && gridCell!=null)
+                else if (action == "UPGRADE_TOWER" && tower !=null)
                 {
-                    Debug.Log($"{action} {towerData.name} {gridCell.name}");
+                    Debug.Log($"{action} {tower.name}");
 
-
-                //need 2 interactable in metadata for this action
-                HandleSpawnTower(towerData, gridCell);
-            }
+                    
+                }
                 else
                 {
                     Debug.Log($"{action} action not defined in project");
@@ -137,22 +130,6 @@ public class VoiceCommandController : MonoBehaviour
         cameraController.MoveToPosition(Pos);
         
     }
-    void HandleSpawnTower(Interactable towerData, Interactable gridCell)
-    {
-        if (towerData == null)
-        {
-            Debug.LogWarning("No tower specified");
-            return;
-        }
-
-        if (gridCell == null)
-        {
-            Debug.LogWarning("No grid cell specified");
-            return;
-        }
-          Debug.Log($"Spawning {towerData.name} at {gridCell.name} )");
-            towerManager.PlaceTower(towerData.name, gridCell.position);
-        
-    }
+   
 
 }

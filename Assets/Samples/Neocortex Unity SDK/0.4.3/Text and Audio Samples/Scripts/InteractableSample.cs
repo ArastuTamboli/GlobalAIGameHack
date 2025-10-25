@@ -23,15 +23,18 @@ namespace Neocortex.Samples
             agent.OnChatResponseReceived.AddListener(OnChatResponseReceived);
             agent.OnAudioResponseReceived.AddListener(OnAudioResponseReceived);
             audioReceiver.OnAudioRecorded.AddListener(OnAudioRecorded);
+            
         }
 
         private void StartMicrophone()
         {
+            Debug.Log("StartMicrophone");
             audioReceiver.StartMicrophone();
         }
         
         private void OnAudioRecorded(AudioClip clip)
         {
+            Debug.Log("OnAudioRecorded");
             agent.AudioToAudio(clip);
             thinking.Display(true);
             audioChatInput.SetChatState(false);
@@ -39,18 +42,20 @@ namespace Neocortex.Samples
 
         private void OnTranscriptionReceived(string transcription)
         {
+            Debug.Log("OnTranscriptionReceived");
             chatPanel.AddMessage(transcription, true);
         }
 
         private void OnChatResponseReceived(ChatResponse response)
         {
+            Debug.Log("OnChatResponseReceived");
             chatPanel.AddMessage(response.message, false);
             Interactable interactable = response.metadata.FirstOrDefault(i => i.isSubject);
             
             string action = response.action;
             if (!string.IsNullOrEmpty(action))
             {
-                if (action == "GO_TO_POINT" &&  interactable != null)
+                if (action == "GO_TO_GRID" &&  interactable != null)
                 {
                     Debug.Log($"GO_TO_POINT {interactable.name}");
                     StartCoroutine(GoToPoint(interactable.position));
@@ -72,6 +77,7 @@ namespace Neocortex.Samples
         
         private void OnAudioResponseReceived(AudioClip audioClip)
         {
+            Debug.Log("OnAudioResponseReceived");
             audioSource.clip = audioClip;
             audioSource.Play();
 
