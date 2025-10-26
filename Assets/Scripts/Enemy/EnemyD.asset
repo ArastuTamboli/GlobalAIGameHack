@@ -13,10 +13,8 @@ MonoBehaviour:
   m_Name: EnemyD
   m_EditorClassIdentifier: Assembly-CSharp::EnemyType
   enemyName: EnemyDefault
-  prefab: {fileID: 8012498800988364699, guid: 4b7b0c229c833114cbaaa509b94a22eb, type: 3}
-  baseHealth: 100
+  prefab: {fileID: 8015947632498593639, guid: 08ec72f2e34f3ea40b647d97204b5749, type: 3}
+  baseHealth: 500
   baseDamage: 10
-  baseSpeed: 3
-  baseReward: 10
-  enemyColor: {r: 1, g: 0, b: 0, a: 1}
-  scale: 1
+  baseSpeed: 1
+  baseReward: 400

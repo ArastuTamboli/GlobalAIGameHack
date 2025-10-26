@@ -3,11 +3,11 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [Header("Stats")]
-    public float maxHealth;
-    public float currentHealth;
-    public float damage;
-    public float speed;
-    public int reward;
+     float maxHealth;
+     float currentHealth;
+    [HideInInspector]public float damage;
+     float speed;
+     int reward;
 
     [Header("Movement")]
     public Transform[] waypoints;

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7311f3b624d903e4ea43b27540f56e15, type: 3}
   m_Name: CyroBeamTurret
   m_EditorClassIdentifier: Assembly-CSharp::TowerData
-  towerName: CyroBeamTurret
+  towerName: Cyro Beam Turret
   prefab: {fileID: 8378724618614174852, guid: e80798086c0574a4fb809cd7d20de936, type: 3}
   unlockAtWave: 1
   baseDamage: 50

@@ -38,6 +38,7 @@ public class UIManager : MonoBehaviour
     public Button winQuitButton;
     public Button loseRestartButton;
     public Button loseQuitButton;
+    public Button analyzeButton;
 
     
     GameManager gameManager;
@@ -78,6 +79,13 @@ public class UIManager : MonoBehaviour
 
         if (loseQuitButton != null)
             loseQuitButton.onClick.AddListener(() => gameManager.QuitGame());
+
+        if (analyzeButton != null)
+            analyzeButton.onClick.AddListener(() =>
+            {
+                analyzeButton.gameObject.SetActive(false);
+                VesperManager.Instance.OnClickAnalysisButton();
+            } );
     }
 
     public void UpdateHealth(int current, int max)
@@ -162,6 +170,7 @@ public class UIManager : MonoBehaviour
     public void ShowRestPeriod()
     {
         HideWaveClearedText();
+        analyzeButton.gameObject.SetActive(true);
         if (restPanel != null)
             restPanel.SetActive(true);
     }

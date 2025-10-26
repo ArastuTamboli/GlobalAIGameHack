@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+
 public class TowerInfoUI : MonoBehaviour
 {
     [Header("UI Elements")]
@@ -10,6 +11,7 @@ public class TowerInfoUI : MonoBehaviour
     public TextMeshProUGUI damageText;
     public TextMeshProUGUI rangeText;
     public TextMeshProUGUI rateOfFireText;
+    public Image towerImage;
 
     [Header("Buttons")]
     public GameObject upgradeButton;
@@ -46,24 +48,12 @@ public class TowerInfoUI : MonoBehaviour
         Hide();
     }
 
-    //void LateUpdate()
-    //{
-    //    if (billboardToCamera && mainCamera != null && gameObject.activeSelf)
-    //    {
-    //        transform.rotation = Quaternion.LookRotation(transform.position - mainCamera.transform.position);
-    //    }
-
-    //    if (currentTower != null)
-    //    {
-    //        transform.position = currentTower.transform.position + offset;
-    //    }
-    //}
-
+  
     public void ShowForTower(TowerBehavior tower)
     {
         currentTower = tower;
         gameObject.SetActive(true);
-
+        towerImage.sprite = tower.towerData.towerIcon;  
         UpdateUI();
     }
 
@@ -81,7 +71,7 @@ public class TowerInfoUI : MonoBehaviour
             towerNameText.text = currentTower.towerData.towerName;
 
         if (levelText != null)
-            levelText.text = $"Level {currentTower.upgradeLevel + 1}";
+            levelText.text = $"LVL {currentTower.upgradeLevel + 1}";
 
         UpdateStatsDisplay();
         UpdateUpgradeButton();
@@ -165,6 +155,7 @@ public class TowerInfoUI : MonoBehaviour
         {
             currentTower.Upgrade();
             UpdateUI();
+            
         }
     }
 
@@ -173,6 +164,6 @@ public class TowerInfoUI : MonoBehaviour
         if (currentTower == null) return;
 
         currentTower.Sell();
-        Hide();
+        towerSelectionManager.DeselectTower();
     }
 }

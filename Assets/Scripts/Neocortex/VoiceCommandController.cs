@@ -8,7 +8,7 @@ public class VoiceCommandController : MonoBehaviour
     public NeocortexSmartAgent smartAgent;
     public NeocortexAudioReceiver audioReceiver;
     public CameraController cameraController;
-    public TowerManager towerManager;
+
     //[Header("Settings")]
     //public bool autoStartRecording = false;
     //public float recordingDuration = 5f;
@@ -36,15 +36,26 @@ public class VoiceCommandController : MonoBehaviour
     }
 
     //call this from gameplay logic
-    public void GiveTextInstructionsToNeocortex(string message)
+    public void GiveTextInstructionsToNeocortex(string message ="")
     {
         if (!enableText) return;
-        
-        Debug.Log("GIVE INST");
+
+        VesperManager.Instance.RequestAIAnalysis();
+        //smartAgent.TextToAudio(message);
+        DisableDetection();
+    }
+    public void OnDamageToNeocortex(string message)
+    {
+        if (!enableText) return;
+
+      //  VesperManager.Instance.RequestAIAnalysis();
         smartAgent.TextToAudio(message);
         DisableDetection();
     }
-
+    public void PostRequest(string message)
+    {
+        smartAgent.TextToAudio(message);
+    }
     public void StartVoiceInput()
     {
         Debug.Log("Listening for voice command...");

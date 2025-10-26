@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7338354826610346227}
   - component: {fileID: 8233290820633340393}
-  - component: {fileID: 6570780121488600442}
   - component: {fileID: 3235677059954637821}
   m_Layer: 7
   m_Name: TowerParent
@@ -60,21 +59,6 @@ MonoBehaviour:
   rangeIndicator: {fileID: 0}
   muzzleParticle: {fileID: 6308051827453811879}
   levelUpEffect: {fileID: 5370717865163259007}
---- !u!114 &6570780121488600442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4318181859351338044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd1860a9c9012c64d84c736520afff4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Neocortex.Runtime::Neocortex.NeocortexInteractable
-  Type: 1
-  Name: Tower
-  Properties: []
 --- !u!65 &3235677059954637821
 BoxCollider:
   m_ObjectHideFlags: 0

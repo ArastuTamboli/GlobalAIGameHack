@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 37cb88b0e39b86246a70cf02ca03bb53
+AudioImporter:
+  externalObjects: {}
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 224380
+  packageName: Game Music - Midnight Assault
+  packageVersion: 1.0
+  assetPath: Assets/Gold Diamond - Midnight Assault/Samples/Guitars_Tremolo(2)_8bars.wav
+  uploadId: 505346

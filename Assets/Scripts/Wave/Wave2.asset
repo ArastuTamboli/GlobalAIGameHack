@@ -16,6 +16,7 @@ MonoBehaviour:
   enemyTypes:
   - {fileID: 11400000, guid: b203645f23f355c4f87731e99d341818, type: 2}
   - {fileID: 11400000, guid: 14482202ba72d14448eb0f3d5392a698, type: 2}
-  pathAEnemyCount: 5
-  pathBEnemyCount: 5
-  spawnInterval: 1
+  pathAEnemyCount: 10
+  pathBEnemyCount: 10
+  spawnIntervalMin: 1
+  spawnIntervalMax: 2

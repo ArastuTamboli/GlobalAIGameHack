@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class TowerPlacementManager : MonoBehaviour
@@ -11,7 +12,8 @@ public class TowerPlacementManager : MonoBehaviour
 
     [Header("Visual Prefabs")]
     public GameObject rangeIndicatorPrefab;
-
+    [Header("Upgrade Indicator")]
+    public GameObject upgradeArrowPrefab;
     [Header("UI References")]
     public DragIconUI dragIcon;
     public Canvas canvas;
@@ -27,6 +29,11 @@ public class TowerPlacementManager : MonoBehaviour
     private bool isDragging = false;
     private bool isOverPlacableArea = false;
     private Vector3 currentPlacementPosition;
+
+    private List<TowerBehavior> placedTowers = new List<TowerBehavior>();
+    private TowerBehavior currentIndicatedTower = null;
+    private GameObject activeUpgradeArrow = null;
+
     private void Awake()
     {
         instance = this;
@@ -47,6 +54,11 @@ public class TowerPlacementManager : MonoBehaviour
 
         if (cameraController == null)
             cameraController = FindAnyObjectByType<CameraController>();
+
+        if (gameManager != null)
+        {
+            gameManager.onCurrencyChanged.AddListener(OnMoneyChanged);
+        }
     }
 
     void Update()
@@ -267,11 +279,11 @@ public class TowerPlacementManager : MonoBehaviour
 
         newTower.name = selectedTowerData.towerName;
         newTower.layer = LayerMask.NameToLayer("Tower");
-
         TowerBehavior towerBehavior = newTower.GetComponent<TowerBehavior>();
         if (towerBehavior != null)
         {
             towerBehavior.towerData = selectedTowerData;
+            RegisterTower(towerBehavior);
         }
 
         Debug.Log($"Placed {selectedTowerData.towerName} at {currentPlacementPosition}");
@@ -315,9 +327,121 @@ public class TowerPlacementManager : MonoBehaviour
     {
         return isDragging;
     }
+    public void RegisterTower(TowerBehavior tower)
+    {
+        if (tower != null && !placedTowers.Contains(tower))
+        {
+            placedTowers.Add(tower);
+            Debug.Log($"Tower registered: {tower.name}. Total towers: {placedTowers.Count}");
+        }
+    }
 
+    public void UnregisterTower(TowerBehavior tower)
+    {
+        if (tower != null && placedTowers.Contains(tower))
+        {
+            placedTowers.Remove(tower);
+            Debug.Log($"Tower unregistered: {tower.name}. Total towers: {placedTowers.Count}");
+
+            if (currentIndicatedTower == tower)
+            {
+                HideUpgradeArrow();
+            }
+        }
+    }
+
+    public List<TowerBehavior> GetAllTowers()
+    {
+        placedTowers.RemoveAll(tower => tower == null);
+        return placedTowers;
+    }
+
+    void OnMoneyChanged(int newMoney)
+    {
+        CheckAndShowUpgradeIndicator(newMoney);
+    }
+
+    void CheckAndShowUpgradeIndicator(int currentMoney)
+    {
+        if (activeUpgradeArrow != null)
+        {
+            return;
+        }
+
+        List<TowerBehavior> upgradableTowers = GetUpgradableTowers(currentMoney);
+
+        if (upgradableTowers.Count > 0)
+        {
+            TowerBehavior randomTower = upgradableTowers[Random.Range(0, upgradableTowers.Count)];
+            ShowUpgradeArrowOnTower(randomTower);
+        }
+    }
+
+    List<TowerBehavior> GetUpgradableTowers(int currentMoney)
+    {
+        List<TowerBehavior> upgradable = new List<TowerBehavior>();
+
+        placedTowers.RemoveAll(tower => tower == null);
+
+        foreach (TowerBehavior tower in placedTowers)
+        {
+            if (tower.CanUpgrade() && tower.GetUpgradeCost() <= currentMoney)
+            {
+                upgradable.Add(tower);
+            }
+        }
+
+        return upgradable;
+    }
+
+    void ShowUpgradeArrowOnTower(TowerBehavior tower)
+    {
+        if (upgradeArrowPrefab == null)
+        {
+            Debug.LogWarning("Upgrade arrow prefab not assigned!");
+            return;
+        }
+
+        HideUpgradeArrow();
+
+        activeUpgradeArrow = Instantiate(upgradeArrowPrefab, tower.transform);
+
+        Vector3 arrowPosition = tower.transform.position + Vector3.up * 3f;
+        activeUpgradeArrow.transform.position = arrowPosition;
+
+        currentIndicatedTower = tower;
+
+        Debug.Log($"<color=yellow> Upgrade available for {tower.towerData.towerName}!</color>");
+    }
+
+    public void HideUpgradeArrow()
+    {
+        if (activeUpgradeArrow != null)
+        {
+            Destroy(activeUpgradeArrow);
+            activeUpgradeArrow = null;
+            currentIndicatedTower = null;
+        }
+    }
+
+    public void OnTowerUpgraded(TowerBehavior tower)
+    {
+        if (currentIndicatedTower == tower)
+        {
+            HideUpgradeArrow();
+        }
+    }
+
+    public void OnTowerSold(TowerBehavior tower)
+    {
+        UnregisterTower(tower);
+    }
     void OnDestroy()
     {
         EnableCameraInput();
+        if (gameManager != null)
+        {
+            gameManager.onCurrencyChanged.RemoveListener(OnMoneyChanged);
+        }
     }
 }

@@ -92,32 +92,34 @@ public class PathProgressTrigger : MonoBehaviour
 
         onThresholdReached?.Invoke(percentage, passed, total);
 
-        string message = "";
-        if(pathID == 0) //Orange Path
-        {
-            message += "Orange Path";
-        }
-        else //Blue Path
-        {
-            message += "Blue Path";
-        }
+        //string message = "";
+        //if(pathID == 0) //Orange Path
+        //{
+        //    message += "Orange Path";
+        //}
+        //else //Blue Path
+        //{
+        //    message += "Blue Path";
+        //}
 
-        switch (place)
-        {
-            case TriggerPlace.Normal:
-                message += "Weak";
-                break;
-            case TriggerPlace.Weak:
-                message += "Fragile";
-                break;
-            case TriggerPlace.Critical:
-                message += "Broken";
-                break;
-            default:
-                break;
-        }
+        //switch (place)
+        //{
+        //    case TriggerPlace.Normal:
+        //        message += "Weak";
+        //        break;
+        //    case TriggerPlace.Weak:
+        //        message += "Fragile";
+        //        break;
+        //    case TriggerPlace.Critical:
+        //        message += "Broken";
+        //        break;
+        //    default:
+        //        break;
+        //}
 
-        VoiceCommandController.instance.GiveTextInstructionsToNeocortex(message);
+     //  VoiceCommandController.instance.GiveTextInstructionsToNeocortex(message);
+       VoiceCommandController.instance.GiveTextInstructionsToNeocortex();
+      
     }
 
     public void ResetTrigger()

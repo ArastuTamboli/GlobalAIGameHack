@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7311f3b624d903e4ea43b27540f56e15, type: 3}
   m_Name: TeslaArcTower
   m_EditorClassIdentifier: Assembly-CSharp::TowerData
-  towerName: TeslaArcTower
+  towerName: Tesla Arc Tower
   prefab: {fileID: 2220049617511817036, guid: 576e04fa1a22a6842bec6847d075b15e, type: 3}
-  unlockAtWave: 1
+  unlockAtWave: 3
   baseDamage: 200
   baseRateOfFire: 0.5
   baseRange: 4.5

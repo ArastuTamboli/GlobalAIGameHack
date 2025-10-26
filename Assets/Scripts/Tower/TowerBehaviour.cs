@@ -238,6 +238,7 @@ public class TowerBehavior : MonoBehaviour
         UpdateRangeIndicator();
         levelUpEffect.Play();
         Debug.Log($"{towerData.towerName} upgraded to Level {upgradeLevel + 1}");
+        TowerPlacementManager.instance.OnTowerUpgraded(this);
     }
 
     public void Upgrade()
@@ -245,9 +246,13 @@ public class TowerBehavior : MonoBehaviour
         if (!CanUpgrade()) return;
 
         int cost = GetUpgradeCost();
-        totalInvested += cost;
+        if (GameManager.instance.SpendMoney(cost))
+        {
+            totalInvested += cost;
 
-        UpgradeToLevel(upgradeLevel + 1);
+            UpgradeToLevel(upgradeLevel + 1);
+        }
+            
     }
 
     public void Sell()
@@ -257,6 +262,7 @@ public class TowerBehavior : MonoBehaviour
         if (GameManager.instance != null)
         {
             GameManager.instance.AddMoney(sellValue);
+            TowerPlacementManager.instance?.OnTowerSold(this);
         }
 
         Debug.Log($"Sold {towerData.towerName} for ${sellValue}");

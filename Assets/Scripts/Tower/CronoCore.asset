@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7311f3b624d903e4ea43b27540f56e15, type: 3}
   m_Name: CronoCore
   m_EditorClassIdentifier: Assembly-CSharp::TowerData
-  towerName: CronoCore
+  towerName: Crono Core
   prefab: {fileID: 53965112773983695, guid: c40295e76dcc4ce439fffde420063207, type: 3}
   unlockAtWave: 1
   baseDamage: 60

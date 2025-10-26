@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TowerData
   towerName: Nova Lance
   prefab: {fileID: 2068925787607227938, guid: fd1917d08cc69c44b9a507fe8ccfb5a9, type: 3}
-  unlockAtWave: 1
+  unlockAtWave: 2
   baseDamage: 120
   baseRateOfFire: 1.5
   baseRange: 4.5

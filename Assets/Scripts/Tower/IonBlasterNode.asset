@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7311f3b624d903e4ea43b27540f56e15, type: 3}
   m_Name: IonBlasterNode
   m_EditorClassIdentifier: Assembly-CSharp::TowerData
-  towerName: IonBlasterNode
+  towerName: Ion Blaster Node
   prefab: {fileID: 4924658044745295346, guid: 03a4d22adb419c84791434e3a74f4f90, type: 3}
   unlockAtWave: 1
   baseDamage: 110
