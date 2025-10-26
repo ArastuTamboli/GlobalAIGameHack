@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GameplayButtonScreen.unity
     guid: 7b2361cc7b31e824db3eb8f3c864a306
   - enabled: 1
+    path: Assets/Scenes/CutSceneIntro.unity
+    guid: f38a4da57ac8ea74f8899c22ac7b1eb4
+  - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
