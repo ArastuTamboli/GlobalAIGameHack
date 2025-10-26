@@ -12,13 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80f0344c11092d948b7814c36f9d60aa, type: 3}
   m_Name: Wave1
   m_EditorClassIdentifier: Assembly-CSharp::WaveConfig
-  waveNumber: 0
-  enemySpawns:
-  - enemyType: {fileID: 11400000, guid: b203645f23f355c4f87731e99d341818, type: 2}
-    count: 10
-    spawnInterval: 2
-  - enemyType: {fileID: 11400000, guid: 14482202ba72d14448eb0f3d5392a698, type: 2}
-    count: 10
-    spawnInterval: 2
-  timeBetweenSpawns: 0.5
-  delayBeforeNextWave: 5
+  waveName: Wave 1
+  enemyTypes:
+  - {fileID: 11400000, guid: b203645f23f355c4f87731e99d341818, type: 2}
+  - {fileID: 11400000, guid: 14482202ba72d14448eb0f3d5392a698, type: 2}
+  pathAEnemyCount: 5
+  pathBEnemyCount: 5
+  spawnInterval: 1

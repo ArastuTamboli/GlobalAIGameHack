@@ -15,19 +15,14 @@ MonoBehaviour:
   towerName: TeslaArcTower
   prefab: {fileID: 2220049617511817036, guid: 576e04fa1a22a6842bec6847d075b15e, type: 3}
   unlockAtWave: 1
-  baseDamage: 100
-  baseRateOfFire: 1
-  baseRange: 10
+  baseDamage: 200
+  baseRateOfFire: 0.5
+  baseRange: 4.5
   strongAgainst: []
   weakAgainst: []
-  baseCost: 100
+  baseCost: 1500
   upgradeCostMultiplier: 1.4
   damagePerLevel: 1.2
-  rangePerLevel: 1.15
+  rangePerLevel: 0
   rateOfFirePerLevel: 1.1
   towerIcon: {fileID: 21300000, guid: 352bcf13f8519f342bdb04a8a292f2e1, type: 3}
-  beamColor: {r: 1, g: 0, b: 0, a: 1}
-  beamWidth: 0.1
-  beamDuration: 0.1
-  muzzleFlashEffect: {fileID: 0}
-  hitEffect: {fileID: 0}

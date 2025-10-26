@@ -8,7 +8,6 @@ public class UIManager : MonoBehaviour
     [Header("HUD")]
     public Slider healthBar;
     public Image healthBarFill;
-    public TextMeshProUGUI healthValueText;
     public TextMeshProUGUI moneyText;
     public TextMeshProUGUI enemyCountText;
 
@@ -92,10 +91,10 @@ public class UIManager : MonoBehaviour
             UpdateHealthBarColor(healthPercent);
         }
 
-        if (healthValueText != null)
-        {
-            healthValueText.text = $"{current}/{max}";
-        }
+        //if (healthValueText != null)
+        //{
+        //    healthValueText.text = $"{current}/{max}";
+        //}
     }
 
     void UpdateHealthBarColor(float healthPercent)

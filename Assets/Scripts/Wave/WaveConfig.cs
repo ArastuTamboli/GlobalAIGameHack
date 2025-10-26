@@ -13,10 +13,37 @@ public class EnemySpawnInfo
 public class WaveConfig : ScriptableObject
 {
     [Header("Wave Info")]
-    public int waveNumber;
-    public List<EnemySpawnInfo> enemySpawns = new List<EnemySpawnInfo>();
+    public string waveName = "Wave 1";
 
-    [Header("Timing")]
-    public float timeBetweenSpawns = 0.5f;
-    public float delayBeforeNextWave = 5f;
+    [Header("Enemy Types Pool")]
+    public EnemyType[] enemyTypes;
+
+    [Header("Path Distribution")]
+    public int pathAEnemyCount = 5;
+    public int pathBEnemyCount = 5;
+
+    [Header("Spawn Timing")]
+    public float spawnIntervalMin = 1f;
+    public float spawnIntervalMax = 2f;
+
+    public int GetTotalEnemyCount()
+    {
+        return pathAEnemyCount + pathBEnemyCount;
+    }
+
+    public EnemyType GetRandomEnemyType()
+    {
+        if (enemyTypes == null || enemyTypes.Length == 0)
+        {
+            Debug.LogError($"No enemy types assigned to wave {waveName}!");
+            return null;
+        }
+
+        return enemyTypes[Random.Range(0, enemyTypes.Length)];
+    }
+    public float GetRandomSpawnInterval()
+    {
+        
+        return Random.Range(spawnIntervalMin, spawnIntervalMax);
+    }
 }

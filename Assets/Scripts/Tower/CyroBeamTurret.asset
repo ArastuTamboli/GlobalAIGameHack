@@ -15,19 +15,14 @@ MonoBehaviour:
   towerName: CyroBeamTurret
   prefab: {fileID: 8378724618614174852, guid: e80798086c0574a4fb809cd7d20de936, type: 3}
   unlockAtWave: 1
-  baseDamage: 95
-  baseRateOfFire: 1.6
-  baseRange: 9
+  baseDamage: 50
+  baseRateOfFire: 1.5
+  baseRange: 4.5
   strongAgainst: []
   weakAgainst: []
-  baseCost: 130
+  baseCost: 100
   upgradeCostMultiplier: 1.4
   damagePerLevel: 1.2
-  rangePerLevel: 1.15
+  rangePerLevel: 0
   rateOfFirePerLevel: 1.1
   towerIcon: {fileID: 21300000, guid: e30f04da85b3c28499290b60a8ea745b, type: 3}
-  beamColor: {r: 1, g: 0, b: 0, a: 1}
-  beamWidth: 0.1
-  beamDuration: 0.1
-  muzzleFlashEffect: {fileID: 0}
-  hitEffect: {fileID: 0}

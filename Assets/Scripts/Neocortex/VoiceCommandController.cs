@@ -1,9 +1,9 @@
 using Neocortex;
 using Neocortex.Data;
-using System.Linq;
 using UnityEngine;
 public class VoiceCommandController : MonoBehaviour
 {
+    public static VoiceCommandController instance;
     [Header("References")]
     public NeocortexSmartAgent smartAgent;
     public NeocortexAudioReceiver audioReceiver;
@@ -13,10 +13,16 @@ public class VoiceCommandController : MonoBehaviour
     //public bool autoStartRecording = false;
     //public float recordingDuration = 5f;
     //private bool isProcessing = false;
+    [SerializeField] private AudioSource audioSource;
 
+    private void Awake()
+    {
+        instance = this;
+    }
     void Start()
     {
-        StartVoiceInput();
+        EnableDetection();
+        //StartVoiceInput();
         if (smartAgent == null)
             smartAgent = GetComponent<NeocortexSmartAgent>();
         if (audioReceiver == null)
@@ -27,6 +33,16 @@ public class VoiceCommandController : MonoBehaviour
         smartAgent.OnTranscriptionReceived.AddListener(OnTranscriptionReceived);
         smartAgent.OnAudioResponseReceived.AddListener(OnAudioResponseReceived);
         audioReceiver.OnAudioRecorded.AddListener(OnAudioRecorded);
+    }
+
+    //call this from gameplay logic
+    public void GiveTextInstructionsToNeocortex(string message)
+    {
+        if (!enableText) return;
+        
+        Debug.Log("GIVE INST");
+        smartAgent.TextToAudio(message);
+        DisableDetection();
     }
 
     public void StartVoiceInput()
@@ -42,7 +58,7 @@ public class VoiceCommandController : MonoBehaviour
     void OnAudioRecorded(AudioClip audioClip)
     {
         Debug.Log($"Audio recorded: {audioClip.samples} samples");
-        smartAgent.AudioToText(audioClip);
+       // smartAgent.AudioToText(audioClip);
  
     }
     void OnTranscriptionReceived(string transcription)
@@ -54,34 +70,50 @@ public class VoiceCommandController : MonoBehaviour
         Debug.Log($"AI Response: {response.message}");
         Debug.Log($"Action: {response.action}");
         Debug.Log($"Meta: {response.metadata.Length}");
-        
-        Interactable interactable = response.metadata.FirstOrDefault(i => i.isSubject);
 
-        string action = response.action;
+        //Interactable interactable = response.metadata.FirstOrDefault(i => i.isSubject);
 
-        if (!string.IsNullOrEmpty(action))
-        {
-                if (action == "GO_TO_POINT")
-                {
-                    MoveCamera(interactable.position);
-                }
-                else
-                {
-                    Debug.Log($"{action} action error");
-                }
-        }
-        else
-        {
-            Debug.Log("Invalid Action");
-        }
+        //string action = response.action;
 
-        StartVoiceInput();
+        //if (!string.IsNullOrEmpty(action))
+        //{
+        //        if (action == "GO_TO_POINT")
+        //        {
+        //            MoveCamera(interactable.position);
+        //        }
+        //        else
+        //        {
+        //            Debug.Log($"{action} action error");
+        //        }
+        //}
+        //else
+        //{
+        //    Debug.Log("Invalid Action");
+        //}
+
+        // StartVoiceInput();
     }
     private void OnAudioResponseReceived(AudioClip audioClip)
     {
+        audioSource.clip = audioClip;
+        audioSource.Play();
         Debug.Log("Audio Received");
+        Invoke(nameof(EnableDetection), audioClip.length);
     }
-   
+    bool enableText;
+
+    private void EnableDetection()
+    {
+        EnableDetection(true);
+    }
+    private void DisableDetection()
+    {
+        EnableDetection(false);
+    }
+    void EnableDetection(bool enable)
+    {
+        enableText = enable;
+    }
     void MoveCamera(Vector3 Pos)
     {   
         cameraController.MoveToPosition(Pos);

@@ -11,13 +11,15 @@ public class WaveManager : MonoBehaviour
     public int currentWaveIndex = 0;
 
     [Header("Spawn Points")]
-    public Transform[] path1SpawnPoints;
-    public Transform[] path2SpawnPoints;
+    public Transform pathASpawnPoint;
+    public Transform pathBSpawnPoint;
 
     [Header("Scaling")]
     public float healthMultiplier = 1.15f;
     public float damageMultiplier = 1.1f;
-
+    [Header("Path Progress Triggers")]
+    public PathProgressTrigger[] path1Triggers;
+    public PathProgressTrigger[] path2Triggers;
     [Header("References")]
     public PathManager pathManager;
     public GameManager gameManager;
@@ -30,7 +32,7 @@ public class WaveManager : MonoBehaviour
     private List<Enemy> activeEnemies = new List<Enemy>();
     private bool allEnemiesSpawned = false;
     private bool isSpawning = false;
-
+    private int currentWaveTotalEnemies = 0;
     public bool IsPaused { get; private set; }
 
     private void Awake()
@@ -46,6 +48,7 @@ public class WaveManager : MonoBehaviour
         if (gameManager == null)
             gameManager = GameManager.instance;
 
+   
         StartCoroutine(GameLoop());
     }
 
@@ -72,7 +75,12 @@ public class WaveManager : MonoBehaviour
 
         onWaveStart?.Invoke(waveNumber);
 
-        yield return StartCoroutine(SpawnWave(waves[currentWaveIndex], waveNumber));
+        WaveConfig currentWave = waves[currentWaveIndex];
+        currentWaveTotalEnemies = currentWave.GetTotalEnemyCount();
+
+        InitializePathTriggers(currentWave.pathAEnemyCount, currentWave.pathBEnemyCount);
+
+        yield return StartCoroutine(SpawnWave(currentWave, waveNumber));
 
         yield return new WaitUntil(() => AreAllEnemiesDefeated());
 
@@ -91,27 +99,53 @@ public class WaveManager : MonoBehaviour
         }
     }
 
+    void InitializePathTriggers(int path1EnemyCount, int path2EnemyCount)
+    {
+        if (path1Triggers != null && path1Triggers.Length > 0)
+        {
+            foreach (PathProgressTrigger trigger in path1Triggers)
+            {
+                if (trigger != null)
+                {
+                    trigger.ResetTrigger();
+                    trigger.SetTotalEnemies(path1EnemyCount,0);
+                    Debug.Log($"<color=green>[Path 1 Trigger]</color> Set to track {path1EnemyCount} enemies");
+                }
+            }
+        }
+
+        if (path2Triggers != null && path2Triggers.Length > 0)
+        {
+            foreach (PathProgressTrigger trigger in path2Triggers)
+            {
+                if (trigger != null)
+                {
+                    trigger.ResetTrigger();
+                    trigger.SetTotalEnemies(path2EnemyCount, 1);
+                    Debug.Log($"<color=blue>[Path 2 Trigger]</color> Set to track {path2EnemyCount} enemies");
+                }
+            }
+        }
+    }
+
     IEnumerator SpawnWave(WaveConfig wave, int waveNumber)
     {
         isSpawning = true;
         allEnemiesSpawned = false;
         activeEnemies.Clear();
 
-        foreach (EnemySpawnInfo spawnInfo in wave.enemySpawns)
-        {
-            for (int i = 0; i < spawnInfo.count; i++)
-            {
-                if (IsPaused)
-                {
-                    isSpawning = false;
-                    yield break;
-                }
+        List<SpawnData> spawnSequence = BuildSpawnSequence(wave, waveNumber);
 
-                SpawnEnemy(spawnInfo.enemyType, waveNumber);
-                yield return new WaitForSeconds(spawnInfo.spawnInterval);
+        foreach (SpawnData spawnData in spawnSequence)
+        {
+            if (IsPaused)
+            {
+                isSpawning = false;
+                yield break;
             }
 
-            yield return new WaitForSeconds(wave.timeBetweenSpawns);
+            SpawnEnemyOnPath(spawnData);
+            yield return new WaitForSeconds(wave.GetRandomSpawnInterval());
         }
 
         allEnemiesSpawned = true;
@@ -119,37 +153,62 @@ public class WaveManager : MonoBehaviour
         Debug.Log($"All enemies spawned for Wave {waveNumber}. Total: {activeEnemies.Count}");
     }
 
+    List<SpawnData> BuildSpawnSequence(WaveConfig wave, int waveNumber)
+    {
+        List<SpawnData> sequence = new List<SpawnData>();
+
+        for (int i = 0; i < wave.pathAEnemyCount; i++)
+        {
+            EnemyType randomEnemy = wave.GetRandomEnemyType();
+            sequence.Add(new SpawnData(randomEnemy, 0, waveNumber));
+        }
+
+        for (int i = 0; i < wave.pathBEnemyCount; i++)
+        {
+            EnemyType randomEnemy = wave.GetRandomEnemyType();
+            sequence.Add(new SpawnData(randomEnemy, 1, waveNumber));
+        }
+
+        for (int i = sequence.Count - 1; i > 0; i--)
+        {
+            int randomIndex = Random.Range(0, i + 1);
+            SpawnData temp = sequence[i];
+            sequence[i] = sequence[randomIndex];
+            sequence[randomIndex] = temp;
+        }
+
+        return sequence;
+    }
+
+    void SpawnEnemyOnPath(SpawnData spawnData)
+    {
+        Transform[] selectedPath = pathManager.GetPath(spawnData.pathIndex);
+
+        Transform spawnPoint = spawnData.pathIndex == 0 ?
+            pathASpawnPoint:
+            pathBSpawnPoint;
+
+        GameObject enemyObj = Instantiate(spawnData.enemyType.prefab, spawnPoint.position, spawnPoint.rotation);
+        Enemy enemy = enemyObj.GetComponent<Enemy>();
+
+        if (enemy != null)
+        {
+            enemy.Initialize(spawnData.enemyType, spawnData.waveNumber, healthMultiplier, damageMultiplier);
+            enemy.waypoints = selectedPath;
+            enemy.waveManager = this;
+            activeEnemies.Add(enemy);
+        }
+    }
+
     IEnumerator RestPeriod()
     {
         float restTime = 30f;
         float countdownTime = 10f;
 
-        yield return StartCoroutine(gameManager.ShowCountdown(restTime, "Rest Period"));
-
+        yield return StartCoroutine(gameManager.ShowCountdown(restTime, "Take Rest"));
         yield return StartCoroutine(gameManager.ShowCountdown(countdownTime, "Next Wave in"));
 
         gameManager.HideRestPeriod();
-    }
-
-    void SpawnEnemy(EnemyType enemyType, int waveNumber)
-    {
-        int pathIndex = pathManager.GetRandomPathIndex();
-        Transform[] selectedPath = pathManager.GetPath(pathIndex);
-
-        Transform spawnPoint = pathIndex == 0 ?
-            path1SpawnPoints[Random.Range(0, path1SpawnPoints.Length)] :
-            path2SpawnPoints[Random.Range(0, path2SpawnPoints.Length)];
-
-        GameObject enemyObj = Instantiate(enemyType.prefab, spawnPoint.position, Quaternion.identity);
-        Enemy enemy = enemyObj.GetComponent<Enemy>();
-
-        if (enemy != null)
-        {
-            enemy.Initialize(enemyType, waveNumber, healthMultiplier, damageMultiplier);
-            enemy.waypoints = selectedPath;
-            enemy.waveManager = this;
-            activeEnemies.Add(enemy);
-        }
     }
 
     public void RegisterEnemy(Enemy enemy)
@@ -191,5 +250,24 @@ public class WaveManager : MonoBehaviour
     public int GetActiveEnemyCount()
     {
         return activeEnemies.Count;
+    }
+
+    public int GetCurrentWaveTotalEnemies()
+    {
+        return currentWaveTotalEnemies;
+    }
+
+    private class SpawnData
+    {
+        public EnemyType enemyType;
+        public int pathIndex;
+        public int waveNumber;
+
+        public SpawnData(EnemyType type, int path, int wave)
+        {
+            enemyType = type;
+            pathIndex = path;
+            waveNumber = wave;
+        }
     }
 }

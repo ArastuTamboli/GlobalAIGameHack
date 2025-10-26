@@ -29,13 +29,7 @@ public class TowerData : ScriptableObject
 
     [Header("Visual")]
     public Sprite towerIcon;
-    public Color beamColor = Color.red;
-    public float beamWidth = 0.1f;
-    public float beamDuration = 0.1f;
 
-    [Header("Effects")]
-    public GameObject muzzleFlashEffect;
-    public GameObject hitEffect;
     public int GetUpgradeCost(int currentLevel)
     {
         if (currentLevel >= 3) return 0;

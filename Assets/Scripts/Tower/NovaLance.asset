@@ -15,19 +15,14 @@ MonoBehaviour:
   towerName: Nova Lance
   prefab: {fileID: 2068925787607227938, guid: fd1917d08cc69c44b9a507fe8ccfb5a9, type: 3}
   unlockAtWave: 1
-  baseDamage: 100
-  baseRateOfFire: 1
-  baseRange: 10
+  baseDamage: 120
+  baseRateOfFire: 1.5
+  baseRange: 4.5
   strongAgainst: []
   weakAgainst: []
-  baseCost: 100
+  baseCost: 1000
   upgradeCostMultiplier: 1.4
   damagePerLevel: 1.2
-  rangePerLevel: 1.15
+  rangePerLevel: 0
   rateOfFirePerLevel: 1.1
   towerIcon: {fileID: 21300000, guid: 099ba4c04bbe51b4ea5551d69a7ff39b, type: 3}
-  beamColor: {r: 1, g: 0, b: 0, a: 1}
-  beamWidth: 0.1
-  beamDuration: 0.1
-  muzzleFlashEffect: {fileID: 0}
-  hitEffect: {fileID: 0}

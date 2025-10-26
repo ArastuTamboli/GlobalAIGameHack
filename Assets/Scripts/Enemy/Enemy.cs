@@ -29,6 +29,7 @@ public class Enemy : MonoBehaviour
     private float originalSpeed;
     private bool isSlowed = false;
 
+    [SerializeField] ParticleSystem hitEffect;
     public void Initialize(EnemyType type, int waveNumber, float healthMultiplier, float damageMultiplier)
     {
         maxHealth = type.baseHealth * Mathf.Pow(healthMultiplier, waveNumber - 1);
@@ -88,7 +89,7 @@ public class Enemy : MonoBehaviour
         if (isDead) return;
 
         currentHealth -= damageAmount;
-
+        hitEffect.Play();   
         if (healthBar != null)
         {
             healthBar.UpdateHealth(currentHealth, maxHealth);

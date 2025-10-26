@@ -19,7 +19,8 @@ public class TowerBehavior : MonoBehaviour
 
     [Header("Visual")]
     public GameObject rangeIndicator;
-    public LineRenderer beamLineRenderer;
+    public ParticleSystem muzzleParticle;
+    public ParticleSystem levelUpEffect;
 
     private const int MAX_UPGRADE_LEVEL = 3;
     private const float STRONG_MULTIPLIER = 1.5f;
@@ -51,14 +52,7 @@ public class TowerBehavior : MonoBehaviour
         rateOfFire = towerData.baseRateOfFire;
         range = towerData.baseRange;
         totalInvested = towerData.baseCost;
-        if (beamLineRenderer != null)
-        {
-            beamLineRenderer.startWidth = towerData.beamWidth;
-            beamLineRenderer.endWidth = towerData.beamWidth * 0.5f;
-            beamLineRenderer.startColor = towerData.beamColor;
-            beamLineRenderer.endColor = towerData.beamColor;
-        }
-
+    
         UpdateRangeIndicator();
     }
 
@@ -148,45 +142,33 @@ public class TowerBehavior : MonoBehaviour
                 float effectiveDamage = CalculateEffectiveDamage(enemy);
                 enemy.TakeDamage(effectiveDamage);
 
-                ShowBeamEffect(firePoint.position, hit.point);
+                //ShowMuzzleEffect(firePoint.position, hit.point);
+              //  ShowMuzzleEffect();
 
-                if (towerData.hitEffect != null)
-                {
-                    Instantiate(towerData.hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
-                }
+                //if (towerData.hitEffect != null)
+                //{
+                //    Instantiate(towerData.hitEffect, hit.point, Quaternion.LookRotation(hit.normal));
+                //}
             }
         }
         else
         {
-            ShowBeamEffect(firePoint.position, targetPosition);
+          //  ShowMuzzleEffect();
         }
-
-        if (towerData.muzzleFlashEffect != null)
-        {
-            Instantiate(towerData.muzzleFlashEffect, firePoint.position, firePoint.rotation);
-        }
+        ShowMuzzleEffect();
+        //if (towerData.muzzleFlashEffect != null)
+        //{
+        //   // Instantiate(towerData.muzzleFlashEffect, firePoint.position, firePoint.rotation);
+         
+        //}
     }
 
-    void ShowBeamEffect(Vector3 start, Vector3 end)
+    void ShowMuzzleEffect()
     {
-        if (beamLineRenderer == null) return;
-
-        StopCoroutine(nameof(BeamEffectCoroutine));
-        StartCoroutine(BeamEffectCoroutine(start, end));
+        muzzleParticle.Play();
     }
 
-    IEnumerator BeamEffectCoroutine(Vector3 start, Vector3 end)
-    {
-        beamLineRenderer.enabled = true;
-        beamLineRenderer.SetPosition(0, start);
-        beamLineRenderer.SetPosition(1, end);
-
-        float duration = towerData != null ? towerData.beamDuration : 0.1f;
-        yield return new WaitForSeconds(duration);
-
-        beamLineRenderer.enabled = false;
-    }
-
+  
     float CalculateEffectiveDamage(Enemy enemy)
     {
         float effectiveDamage = damage;
@@ -254,7 +236,7 @@ public class TowerBehavior : MonoBehaviour
         rateOfFire = towerData.baseRateOfFire / Mathf.Pow(towerData.rateOfFirePerLevel, upgradeLevel);
 
         UpdateRangeIndicator();
-
+        levelUpEffect.Play();
         Debug.Log($"{towerData.towerName} upgraded to Level {upgradeLevel + 1}");
     }
 
