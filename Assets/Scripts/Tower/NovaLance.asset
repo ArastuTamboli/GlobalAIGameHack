@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7311f3b624d903e4ea43b27540f56e15, type: 3}
+  m_Name: NovaLance
+  m_EditorClassIdentifier: Assembly-CSharp::TowerData
+  towerName: Nova Lance
+  prefab: {fileID: 2068925787607227938, guid: fd1917d08cc69c44b9a507fe8ccfb5a9, type: 3}
+  unlockAtWave: 1
+  baseDamage: 100
+  baseRateOfFire: 1
+  baseRange: 10
+  strongAgainst: []
+  weakAgainst: []
+  baseCost: 100
+  upgradeCostMultiplier: 1.4
+  damagePerLevel: 1.2
+  rangePerLevel: 1.15
+  rateOfFirePerLevel: 1.1
+  towerIcon: {fileID: 21300000, guid: 099ba4c04bbe51b4ea5551d69a7ff39b, type: 3}
+  beamColor: {r: 1, g: 0, b: 0, a: 1}
+  beamWidth: 0.1
+  beamDuration: 0.1
+  muzzleFlashEffect: {fileID: 0}
+  hitEffect: {fileID: 0}

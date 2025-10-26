@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: CyroBeamTurret
   m_EditorClassIdentifier: Assembly-CSharp::TowerData
   towerName: CyroBeamTurret
-  prefab: {fileID: 4318181859351338044, guid: 5d58ecb7ec2293842ab250c00047b500, type: 3}
-  projectilePrefab: {fileID: 0}
+  prefab: {fileID: 8378724618614174852, guid: e80798086c0574a4fb809cd7d20de936, type: 3}
   unlockAtWave: 1
   baseDamage: 95
   baseRateOfFire: 1.6
@@ -26,4 +25,9 @@ MonoBehaviour:
   damagePerLevel: 1.2
   rangePerLevel: 1.15
   rateOfFirePerLevel: 1.1
-  towerIcon: {fileID: 21300000, guid: 352bcf13f8519f342bdb04a8a292f2e1, type: 3}
+  towerIcon: {fileID: 21300000, guid: e30f04da85b3c28499290b60a8ea745b, type: 3}
+  beamColor: {r: 1, g: 0, b: 0, a: 1}
+  beamWidth: 0.1
+  beamDuration: 0.1
+  muzzleFlashEffect: {fileID: 0}
+  hitEffect: {fileID: 0}
